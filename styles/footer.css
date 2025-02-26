@@ -1,0 +1,42 @@
+.footer {
+  display: flex;                /* Use flexbox for the footer */
+  justify-content: center;      /* Horizontally center the items */
+  align-items: center;          /* Vertically center the items */
+  gap: 20px;                    /* Optional: Adds space between the images */
+  padding: 10px;                /* Optional: Adds padding around the footer */
+  background: rgb(44, 187, 44);
+}
+
+.footer a {
+  display: flex;                /* Make each anchor a flex container */
+  justify-content: center;      /* Horizontally center the image inside the anchor */
+}
+
+.footer img {
+  height: 40px;                 /* Adjust image size */
+  max-width: 100%;              /* Ensures logos don't exceed container size */
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .footer ul {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
