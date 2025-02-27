@@ -8,13 +8,13 @@
 }
 
 .footer a {
-  display: flex;                /* Make each anchor a flex container */
-  justify-content: center;      /* Horizontally center the image inside the anchor */
+  display: flex;               
+  justify-content: center;      
 }
 
 .footer img {
-  height: 40px;                 /* Adjust image size */
-  max-width: 100%;              /* Ensures logos don't exceed container size */
+  height: 40px;                 
+  max-width: 100%;            
 }
 
 .footer ul {

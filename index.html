@@ -7,11 +7,13 @@
     <title>Sierra-117</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/components.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/progress_bar.css">
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
-<body>
+<body class="main-bg">
     <h1 class="sr-only">Halo</h1>
     <header class="header">
         <a href="index.html">
@@ -29,98 +31,117 @@
             </ul>
         </nav>
     </header>
-    <section class="info">
-        <h2>Sierra 117 (Master Chief)</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, hic expedita impedit odio sed, animi natus
-            numquam ratione aspernatur, eius eos ad ipsa delectus corporis tempore voluptatibus labore perferendis
-            mollitia.</p>
-    </section>
-    <section class="banner">
-        <h2>Mis Skills</h2>
-        <div>
-            <p>Skill Nº1</p>
-        </div>
-        <div>
-            <p>Skill Nº2</p>
-        </div>
-        <div>
-            <p>Skill Nº3</p>
-        </div>
-        <div>
-            <p>Skill Nº3</p>
-        </div>
-        <div>
-            <p>Skill Nº4</p>
-        </div>
-        <div>
-            <p>Skill Nº5</p>
-        </div>
-        <div>
-            <p>Skill Nº6</p>
-        </div>
+    <main>
+        <section class="info">
+            <h2>Sierra 117 (Master Chief)</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, hic expedita impedit odio sed, animi
+                natus
+                numquam ratione aspernatur, eius eos ad ipsa delectus corporis tempore voluptatibus labore perferendis
+                mollitia.</p>
+        </section>
+        <section class="banner">
+            <h2>Mis Skills</h2>
+            <div class="container">
+                <div>
+                    <p>Skill Nº1</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 10%;">10%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Skill Nº2</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 25%;">25%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Skill Nº3</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 40%;">40%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Skill Nº4</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 55%;">55%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Skill Nº5</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Skill Nº6</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </section>
-
-    <form class="form" action="./register" method="post" novalidate>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <div class="form-element">
-            <label for="name">Nombre</label>
-            <input required type="text" name="name" id="name" placeholder="Nombre">
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <div class="form-element">
-            <label for="second-name">Apellido</label>
-            <input required type="text" name="second_name" id="second-name" placeholder="Apellido">
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <div class="form-element">
-            <label for="tel">Ingresa tu número telefónico</label>
-            <input required type="tel" name="telephone" id="tel" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                title="Expected format 123-123-1234" placeholder="123-456-7890" inputmode="tel">
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <div class="form-element">
-            <label for="mail">Ingresa tu correo electrónico</label>
-            <input required type="email" name="email" id="mail" placeholder="your@email.com">
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <fieldset>
-            <legend>¿Cómo nos conociste?</legend>
+        <form class="form" action="./register" method="post" novalidate>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
             <div>
-                <input required type="radio" name="source" id="un" value="universidad">
-                <label for="un">Universidad</label>
+                <div class="form-element">
+                    <label for="name">Nombre</label>
+                    <input required type="text" name="name" id="name" placeholder="Nombre">
+                </div>
+                <div class="form-element">
+                    <label for="second-name">Apellido</label>
+                    <input required type="text" name="second_name" id="second-name" placeholder="Apellido">
+                </div>
+                <div class="form-element">
+                    <label for="tel">Ingresa tu número telefónico</label>
+                    <input required type="tel" name="telephone" id="tel" autocomplete="off"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Expected format 123-123-1234"
+                        placeholder="123-456-7890" inputmode="tel">
+                </div>
+                <div class="form-element">
+                    <label for="mail">Ingresa tu correo electrónico</label>
+                    <input required type="email" name="email" id="mail" placeholder="your@email.com">
+                </div>
             </div>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <fieldset>
+                <legend>¿Cómo nos conociste?</legend>
+                <div>
+                    <input required type="radio" name="source" id="un" value="universidad">
+                    <label for="un">Universidad</label>
+                </div>
+                <div>
+                    <input required type="radio" name="source" id="kc" value="kickoff">
+                    <label for="kc">KeepCoding kick-off</label>
+                </div>
+                <div>
+                    <input required type="radio" name="source" id="col" value="colegio">
+                    <label for="col">Colegio</label>
+                </div>
+                <div>
+                    <input required type="radio" name="source" id="gh" value="github">
+                    <label for="gh">GitHub</label>
+                </div>
+            </fieldset>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <div class="form-element">
+                <label for="bio">Más Información</label>
+                <textarea required name="bio" id="bio" rows="6" placeholder="Máx. 100 caracteres"
+                    maxlength="100"></textarea>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <div class="">
+                <input type="checkbox" name="newsletter_subscription" id="remember">
+                <label for="remember">Quiero acceso a la newsletter</label>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
             <div>
-                <input required type="radio" name="source" id="kc" value="kickoff">
-                <label for="kc">KeepCoding kick-off</label>
+                <button class="btn" type="submit">Enviar</button>
+                <input class="btn secondary" type="reset" value="Reset">
             </div>
-            <div>
-                <input required type="radio" name="source" id="col" value="colegio">
-                <label for="col">Colegio</label>
-            </div>
-            <div>
-                <input required type="radio" name="source" id="gh" value="github">
-                <label for="gh">GitHub</label>
-            </div>
-        </fieldset>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <div class="form-element">
-            <label for="bio">Más Información</label>
-            <textarea required name="bio" id="bio" rows="6" placeholder="Máx. 100 caracteres"
-                maxlength="100"></textarea>
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <div class="">
-            <input type="checkbox" name="newsletter_subscription" id="remember">
-            <label for="remember">Quiero acceso a la newsletter</label>
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-        <div>
-            <button class="btn" type="submit">Enviar</button>
-            <input class="btn secondary" type="reset" value="Reset">
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------------------- -->
-    </form>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        </form>
+    </main>
 
 </body>
 

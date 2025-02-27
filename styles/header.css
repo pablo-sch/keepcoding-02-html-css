@@ -10,14 +10,13 @@
 }
 
 .header a {
-    display: inline-block; /* Mantiene el tamaño del logo */
+    display: inline-block; 
 }
 
 .header img {
     height: 80px;
 }
 
-/* Default navigation for larger screens */
 .nav {
     display: flex;
 }
@@ -44,12 +43,10 @@
     text-transform: uppercase;
 }
 
-/* Hide the checkbox */
 .menu-toggle {
     display: none;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .menu-btn {
         display: block;
@@ -67,19 +64,15 @@
         background: rgb(21, 104, 21);
         width: 100%;
         text-align: right;
-        /* Align text to the right */
         padding-right: 20px;
-        /* Add some right padding */
     }
 
     .list {
         flex-direction: column;
         align-items: flex-end;
-        /* Align list items to the right */
         padding: 10px 20px;
     }
 
-    /* Show the menu when the checkbox is checked */
     .menu-toggle:checked~.nav {
         display: flex;
     }

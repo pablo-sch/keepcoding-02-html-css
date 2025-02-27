@@ -1,43 +1,54 @@
 :root {
-    
-   /*  --bg-color: #000;
+    --bg-color: #36363b;
+    --bg-color-info: #104900;
+    --bg-color-banner: #155f00;
+    --bg-color-form: #2cc900;
     --main-text-color: #FFF;
+/*     --main-text-color: #FFF;
     --main-brand-color: #e50914;
     --main-brand-color-light: #e44c54;
     --border-color: #4b5563;
-    --input-bg-color: #333;
+    --input-bg-color: #333; */
     font-size: 16px;
-    font-family: "Roboto", Arial, Helvetica, sans-serif; */
-  }
-  
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap; 
-    width: 1px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .main-bg {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
 
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  h1, h2, h3, h4, p {
-    margin-top: 0;
-  }
-  
-  p {
-    margin: 0;
-    margin-bottom: 1rem;
-  }
-  
+main {
+  padding: 0 10vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p {
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.main-bg {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+}
+
+
