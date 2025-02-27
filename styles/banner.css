@@ -19,6 +19,13 @@
     border-radius: 10px;
 }
 
+.btn {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Ajusta entre 1rem y 1.5rem según el ancho de la pantalla */
+    padding: 0.75rem 1.5rem; /* Espaciado para mejor accesibilidad */
+    text-align: center;
+    display: inline-block;
+}
+
 .banner-text {
     position: absolute;
     top: 10px;
@@ -30,4 +37,11 @@
     background: rgba(0, 0, 0, 0.6);
     padding: 8px 16px;
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 1rem; /* Reduce el tamaño en móviles */
+        padding: 0.5rem 1rem;
+    }
 }

@@ -1,23 +1,30 @@
+/* Estilos generales */
 .header {
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.5rem 2rem;
     background-color: var(--bg-color-header);
     z-index: 1000;
+    overflow: hidden;
 }
 
 .header a {
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .header img {
-    max-height: 70px;
     max-width: 100%;
     height: auto;
     display: block;
+    max-height: 40px;
+    width: auto;
 }
 
 .menu-container {
@@ -37,6 +44,10 @@
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.5rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .menu-toggle {
@@ -71,39 +82,59 @@
     transform: scale(1.05);
 }
 
+/* Responsivo */
+@media (max-width: 1024px) {
+    .header {
+        padding: 0.5rem 1.5rem;
+    }
+    .header img {
+        max-height: 35px;
+        width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
-    .menu-container {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+    .header {
+        padding: 0.5rem 1rem;
+        position: relative;
+    }
+    .header a {
+        max-width: 70%;
+    }
+    .header img {
+        max-height: 30px;
+        width: 70%;
     }
 
     .menu-btn {
         display: block;
         font-size: 2rem;
-        position: relative;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        right: 15px;
     }
 
     .nav {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
         background-color: var(--bg-color-header);
         text-align: right;
-        padding-right: 20px;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        padding-top: 60px;
+        transition: right 0.3s ease-in-out;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        gap: 15px;
+        padding-right: 20px;
     }
 
     .menu-toggle:checked ~ .nav {
-        opacity: 1;
-        visibility: visible;
+        right: 0;
     }
 
     .list {
@@ -115,5 +146,23 @@
     .btn {
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem 0.5rem;
+    }
+    .header a {
+        max-width: 60%;
+    }
+    .header img {
+        max-height: 25px;
+        width: 60%;
+    }
+
+    .menu-btn {
+        right: 10px;
+        font-size: 1.8rem;
     }
 }

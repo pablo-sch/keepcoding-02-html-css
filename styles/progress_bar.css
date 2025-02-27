@@ -1,3 +1,35 @@
+/* Animación para llenar la barra */
+@keyframes fillProgress {
+    from {
+        width: 0;
+        background-color: hsl(120, 100%, 50%); /* Verde */
+    }
+    25% {
+        background-color: hsl(100, 100%, 50%); /* Verde claro */
+    }
+    50% {
+        background-color: hsl(80, 100%, 50%); /* Amarillo-verdoso */
+    }
+    75% {
+        background-color: hsl(60, 100%, 50%); /* Amarillo */
+    }
+    to {
+        width: var(--progress-width);
+        background-color: hsl(var(--hue), 100%, 50%); /* Color final dinámico */
+    }
+}
+
+/* Animación para hacer aparecer el porcentaje */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contenedor de las barras */
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,26 +45,47 @@
     }
 }
 
+/* Contenedor de la barra de progreso */
 .progress-container {
     width: 100%;
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 10px;
+    position: relative;
 }
 
+/* Barra de progreso animada */
 .progress-bar {
     height: 20px;
-    background-color: #4caf50;
     text-align: center;
     line-height: 20px;
     color: white;
     max-width: 100%;
+    width: 0; /* Inicia en 0 */
+    animation: fillProgress 1.5s ease-in-out forwards;
+    animation-delay: var(--delay); /* Retrasa cada animación */
+    position: relative;
 }
 
-.container div:nth-child(1) .progress-bar { width: 10%; }
-.container div:nth-child(2) .progress-bar { width: 25%; }
-.container div:nth-child(3) .progress-bar { width: 40%; }
-.container div:nth-child(4) .progress-bar { width: 55%; }
-.container div:nth-child(5) .progress-bar { width: 70%; }
-.container div:nth-child(6) .progress-bar { width: 85%; }
+/* Pseudo-elemento para mostrar el porcentaje */
+.progress-bar::after {
+    content: attr(data-progress); /* Muestra el porcentaje */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    opacity: 0; /* Inicia invisible */
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: var(--delay); /* Se sincroniza con la barra */
+}
+
+/* Asignar los valores y retrasos individuales */
+.container div:nth-child(1) .progress-bar { --progress-width: 10%; --hue: 120;}
+.container div:nth-child(2) .progress-bar { --progress-width: 25%; --hue: 100;}
+.container div:nth-child(3) .progress-bar { --progress-width: 40%; --hue: 80;}
+.container div:nth-child(4) .progress-bar { --progress-width: 55%; --hue: 60;}
+.container div:nth-child(5) .progress-bar { --progress-width: 70%; --hue: 40;}
+.container div:nth-child(6) .progress-bar { --progress-width: 85%; --hue: 20;}

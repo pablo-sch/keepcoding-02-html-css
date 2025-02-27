@@ -7,27 +7,32 @@
     <title>Sierra-117</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/components.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/progress_bar.css">
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
-<body>
+<body  class="main-bg" >
     <h1 class="sr-only">Halo</h1>
     <header class="header">
         <a href="index.html">
             <img src="./assets/app/Halo_Logo.png" alt="Logo">
         </a>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-btn">Menu</label>
+        <div class="menu-container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">Menú</label>
 
-        <nav class="nav">
-            <ul class="list">
-                <li><a class="btn" href="./proyects.html">Proyectos</a></li>
-                <li><a class="btn" href="#title">Skills</a></li>
-                <li><a class="btn" href="#title">Contacto</a></li>
-            </ul>
-        </nav>
+            <nav class="nav">
+                <ul class="list">
+                    <li><a class="btn" href="./projects.html">Proyectos</a></li>
+                    <li><a class="btn" href="#skills">Skills</a></li>
+                    <li><a class="btn" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/t-T6lEYJHm8" title="Halo 3 Warthog Run"
@@ -36,30 +41,32 @@
             allowfullscreen>
         </iframe>
     </main>
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="https://www.halostudios.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/links/Halo_Studios_Logo.png" alt="Halo Studios">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.xbox.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/links/Xbox_Logo.png" alt="Halo on Xbox">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/c/Halo" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/links/Youtube_Logo.png" alt="Halo on Youtube">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/Halo" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/links/Twitter_Logo.png" alt="Halo on X">
+                </a>
+            </li>
+        </ul>
+        <p>2025 John-117. All rights Reserved.</p>
+    </footer>
 </body>
-<footer class="footer">
-    <ul>
-        <li>
-            <a href="https://www.halostudios.com" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/links/Halo_Studios_Logo.png" alt="Halo Studios">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.xbox.com" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/links/Xbox_Logo.png" alt="Halo on Xbox">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/c/Halo" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/links/Youtube_Logo.png" alt="Halo on Youtube">
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/Halo" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/links/Twitter_Logo.png" alt="Halo on X">
-            </a>
-        </li>
-    </ul>
-</footer>
+
 
 </html>

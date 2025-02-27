@@ -1,20 +1,31 @@
-.form-element {
+.form-element { 
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
 
     label {
         margin-bottom: 0.5rem;
+        font-weight: bold;
     }
 
-    input,
-    textarea,
-    select {
-        border: none;
+    input, textarea, select {
+        border: 1px solid var(--border-color);
         padding: 1rem;
         border-radius: 5px;
         background-color: var(--input-bg-color);
         color: var(--main-text-color);
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+        width: 100%; /* Ajuste para que no se rompan en resoluciones bajas */
+        max-width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: var(--placeholder-color);
+    }
+
+    input:focus, textarea:focus, select:focus {
+        border-color: var(--focus-color);
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        outline: none;
     }
 
     &.row {
@@ -33,8 +44,15 @@
     gap: 1rem;
 }
 
+.grid-2x2, fieldset, textarea, .chbox{
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
     .grid-2x2 {
         grid-template-columns: 1fr;
+    }
+    .form-element {
+        width: 100%; /* Asegurar que los elementos del formulario ocupen todo el ancho disponible */
     }
 }

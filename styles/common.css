@@ -1,17 +1,25 @@
 :root {
-    --bg-color: #36363b;
-    --bg-color-header: #092a00;
-    --bg-color-info: #104900;
-    --bg-color-banner: #155f00;
-    --bg-color-form: #2cc900;
-    --bg-color-footer: #32e900;
-    --main-text-color: #FFF;
-/*     --main-text-color: #FFF;
+  --bg-color: #25252ce8;
+  --bg-color-header: #080809;
+  --bg-color-info: #104900;
+  --bg-color-banner: #155f00;
+  --bg-color-form: #2cc900;
+
+  --bg-color-footer: #121921;
+  --bg-color-footer-2: #b9b9b9;
+
+
+  --main-text-color: #FFF;
+  --input-bg-color: #767676;
+  --border-color: #ccc;
+  --placeholder-color: #acacac;
+  --focus-color: #007bff;
+  /*     
     --main-brand-color: #e50914;
     --main-brand-color-light: #e44c54;
-    --border-color: #4b5563;
+    
     --input-bg-color: #333; */
-    font-size: 16px;
+  font-size: 16px;
 }
 
 @font-face {
@@ -23,13 +31,29 @@
 
 body {
   font-family: 'Handel';
+  color: var(--main-text-color);
+}
+
+.info,
+.form {
+  margin-bottom: 2rem;
+  /* Ajusta el valor según sea necesario */
+}
+
+.banner {
+  margin-bottom: 2rem !important;
+  /* Forzamos el margen */
+  display: block;
 }
 
 main {
-  width: 80%;
-  max-width: 800px;
+  width: 90%; /* Reduce el ancho en pantallas pequeñas */
+  max-width: 80%; /* Mantiene un límite en pantallas grandes */
   margin: auto;
+  padding: 2rem 4rem 0rem; /* Mantiene un buen espaciado en pantallas grandes */
+  background-color: var(--bg-color);
 }
+
 
 
 
@@ -41,7 +65,11 @@ a {
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin-top: 0;
 }
 
@@ -62,13 +90,17 @@ p {
   width: 1px;
 }
 
-.main-bg {
-  background-color: var(--bg-color);
-  color: var(--main-text-color);
+.main-bg{
+  background-image: url('/assets/app/Wallpaper_3.jpg'); /* Reemplaza con la URL o ruta de tu imagen */
+  background-size: cover; /* La imagen cubre todo el fondo */
+  background-position: center; /* Centrada */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
 }
 
-.main > * {
-  margin-bottom: 2rem;
+@media (max-width: 768px) {
+  main {
+      width: 100%; /* Usa todo el ancho disponible */
+      padding: 2rem; /* Reduce el padding en pantallas pequeñas */
+  }
 }
-
-
