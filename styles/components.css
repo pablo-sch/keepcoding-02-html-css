@@ -2,21 +2,39 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+
     label {
-      margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
     }
-    input, textarea, select {
-      border: none;
-      padding: 1rem;
-      border-radius: 5px;
-      background-color: var(--input-bg-color);
-      color: var(--main-text-color);
+
+    input,
+    textarea,
+    select {
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: var(--input-bg-color);
+        color: var(--main-text-color);
     }
+
     &.row {
-      flex-direction: row;
-      gap: 10px;
-      label {
-        margin: 0;
-      }
+        flex-direction: row;
+        gap: 10px;
+
+        label {
+            margin: 0;
+        }
     }
-  }
+}
+
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+}

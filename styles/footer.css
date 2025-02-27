@@ -1,42 +1,64 @@
 .footer {
-  display: flex;                /* Use flexbox for the footer */
-  justify-content: center;      /* Horizontally center the items */
-  align-items: center;          /* Vertically center the items */
-  gap: 20px;                    /* Optional: Adds space between the images */
-  padding: 10px;                /* Optional: Adds padding around the footer */
-  background: rgb(44, 187, 44);
-}
-
-.footer a {
-  display: flex;               
-  justify-content: center;      
-}
-
-.footer img {
-  height: 40px;                 
-  max-width: 100%;            
+  background-color: var(--bg-color-footer);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; 
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer ul {
+  padding: 15px;
+  margin: 1rem 3rem;
+  padding: 1rem 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.footer p {
+  color: #ccc;
+  text-align: center;
+}
+
+.footer li {
+  display: flex;
   align-items: center;
 }
 
-@media (max-width: 600px) {
+.footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+  min-width: 30px;
+}
+
+.footer a:hover {
+  transform: scale(1.1);
+}
+
+.footer a:hover img {
+  filter: brightness(1.3);
+}
+
+.footer img {
+  height: clamp(28px, 5vw, 40px);
+  width: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
   .footer ul {
-      flex-wrap: wrap;
-      justify-content: center;
+    margin: 1rem 1rem;
   }
 }
+

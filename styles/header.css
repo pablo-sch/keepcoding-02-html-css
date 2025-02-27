@@ -2,69 +2,108 @@
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background: rgb(21, 104, 21);
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--bg-color-header);
     z-index: 1000;
 }
 
 .header a {
-    display: inline-block; 
+    flex-shrink: 0; 
 }
 
 .header img {
-    height: 80px;
+    max-height: 70px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.nav {
+.menu-container {
+    flex: 1;
     display: flex;
-}
-
-.list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
 
 .menu-btn {
     display: none;
-    font-size: 18px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .menu-toggle {
     display: none;
 }
 
+.nav {
+    display: flex;
+}
+
+.nav .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-hover);
+    transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
+    .menu-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     .menu-btn {
         display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        font-size: 2rem;
+        position: relative;
     }
 
     .nav {
-        display: none;
-        flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 100%;
         right: 0;
-        background: rgb(21, 104, 21);
         width: 100%;
+        background-color: var(--bg-color-header);
         text-align: right;
         padding-right: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menu-toggle:checked ~ .nav {
+        opacity: 1;
+        visibility: visible;
     }
 
     .list {
@@ -73,7 +112,8 @@
         padding: 10px 20px;
     }
 
-    .menu-toggle:checked~.nav {
-        display: flex;
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 }

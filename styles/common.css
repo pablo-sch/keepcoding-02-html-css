@@ -1,8 +1,10 @@
 :root {
     --bg-color: #36363b;
+    --bg-color-header: #092a00;
     --bg-color-info: #104900;
     --bg-color-banner: #155f00;
     --bg-color-form: #2cc900;
+    --bg-color-footer: #32e900;
     --main-text-color: #FFF;
 /*     --main-text-color: #FFF;
     --main-brand-color: #e50914;
@@ -10,12 +12,26 @@
     --border-color: #4b5563;
     --input-bg-color: #333; */
     font-size: 16px;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Handel';
+  src: url('/assets/fonts/HandelGo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Handel';
 }
 
 main {
-  padding: 0 10vw;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
 }
+
+
 
 a {
   text-decoration: none;
@@ -49,6 +65,10 @@ p {
 .main-bg {
   background-color: var(--bg-color);
   color: var(--main-text-color);
+}
+
+.main > * {
+  margin-bottom: 2rem;
 }
 
 
