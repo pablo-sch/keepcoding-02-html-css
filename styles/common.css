@@ -1,26 +1,21 @@
 :root {
   --bg-color: #25252ce8;
-  --bg-color-header: #080809;
-  --bg-color-info: #104900;
-  --bg-color-banner: #155f00;
-  --bg-color-form: #2cc900;
 
-  --bg-color-footer: #121921;
-  --bg-color-footer-2: #b9b9b9;
+  --bg-color-header: #0d0d0d;
 
+  --bg-color-footer: #070b0f;
+  --bg-color-footer-2: #a2a3a6;
 
   --main-text-color: #FFF;
   --input-bg-color: #767676;
   --border-color: #ccc;
   --placeholder-color: #acacac;
   --focus-color: #007bff;
-  /*     
-    --main-brand-color: #e50914;
-    --main-brand-color-light: #e44c54;
-    
-    --input-bg-color: #333; */
+
   font-size: 16px;
 }
+
+/*-------------------------------------------------------------------------------------*/
 
 @font-face {
   font-family: 'Handel';
@@ -29,33 +24,31 @@
   font-style: normal;
 }
 
+/*-------------------------------------------------------------------------------------*/
+
 body {
   font-family: 'Handel';
   color: var(--main-text-color);
 }
 
-.info,
-.form {
-  margin-bottom: 2rem;
-  /* Ajusta el valor según sea necesario */
-}
-
-.banner {
-  margin-bottom: 2rem !important;
-  /* Forzamos el margen */
-  display: block;
-}
-
 main {
-  width: 90%; /* Reduce el ancho en pantallas pequeñas */
-  max-width: 80%; /* Mantiene un límite en pantallas grandes */
+  width: 90%;
+  max-width: 1000px;
   margin: auto;
-  padding: 2rem 4rem 0rem; /* Mantiene un buen espaciado en pantallas grandes */
+  padding: 2rem 4rem 2rem;
+  min-height: 100vh; /* Ocupa el 100% de la pantalla */
   background-color: var(--bg-color);
+  
+  /* Centramos los elementos en una columna */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espaciado entre secciones */
 }
 
-
-
+video, iframe {
+  max-width: 100%;
+}
 
 a {
   text-decoration: none;
@@ -80,6 +73,17 @@ p {
 
 /*-------------------------------------------------------------------------------------*/
 
+.info {
+  margin-bottom: 2rem;
+  /* Ajusta el valor según sea necesario */
+}
+
+.banner {
+  margin-bottom: 2rem !important;
+  /* Forzamos el margen */
+  display: block;
+}
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -90,17 +94,48 @@ p {
   width: 1px;
 }
 
-.main-bg{
-  background-image: url('/assets/app/Wallpaper_3.jpg'); /* Reemplaza con la URL o ruta de tu imagen */
-  background-size: cover; /* La imagen cubre todo el fondo */
-  background-position: center; /* Centrada */
-  background-repeat: no-repeat; /* Evita que se repita */
-  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+.main-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+/*-------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
   main {
-      width: 100%; /* Usa todo el ancho disponible */
-      padding: 2rem; /* Reduce el padding en pantallas pequeñas */
+    width: 100%;
+    /* Usa todo el ancho disponible */
+    padding: 2rem;
+    /* Reduce el padding en pantallas pequeñas */
+  }
+}
+
+/* Pantallas grandes (mayores a 1024px) */
+@media (min-width: 1025px) {
+  .main-bg {
+    background-image: url('/assets/app/Wallpaper_2_(3840x2160).jpg');
+  }
+}
+
+/* Pantallas medianas (hasta 1024px) */
+@media (max-width: 1024px) {
+  .main-bg {
+    background-image: url('/assets/app/Wallpaper_2_(1024x576).jpg');
+  }
+}
+
+/* Pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  .main-bg {
+    background-image: url('/assets/app/Wallpaper_2_(768x432).jpg');
+  }
+}
+
+/* Pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+  .main-bg {
+    background-image: url('/assets/app/Wallpaper_2_(480x270).jpg');
   }
 }

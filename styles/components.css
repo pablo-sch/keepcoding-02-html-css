@@ -1,4 +1,47 @@
-.form-element { 
+.btn {
+
+    text-align: center;
+    display: inline-block;
+
+
+    background-color: #122336;
+    /* Azul */
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+
+    padding: 0.75rem 1.5rem;
+}
+
+.nvr-btn {
+    text-align: center;
+    /* Centrar el texto dentro del botón */
+}
+
+
+
+.btn:hover {
+    background-color: #0056b3 !important;
+    /* Azul más oscuro */
+    transform: scale(1.05);
+}
+
+
+.btn:active {
+    background-color: #003f80 !important;
+    /* Azul aún más oscuro */
+    transform: scale(0.98);
+}
+
+
+.form-element {
     display: flex;
     flex-direction: column;
 
@@ -7,22 +50,28 @@
         font-weight: bold;
     }
 
-    input, textarea, select {
+    input,
+    textarea,
+    select {
         border: 1px solid var(--border-color);
         padding: 1rem;
         border-radius: 5px;
         background-color: var(--input-bg-color);
         color: var(--main-text-color);
         transition: border 0.3s ease, box-shadow 0.3s ease;
-        width: 100%; /* Ajuste para que no se rompan en resoluciones bajas */
+        width: 100%;
+        /* Ajuste para que no se rompan en resoluciones bajas */
         max-width: 100%;
     }
 
-    input::placeholder, textarea::placeholder {
+    input::placeholder,
+    textarea::placeholder {
         color: var(--placeholder-color);
     }
 
-    input:focus, textarea:focus, select:focus {
+    input:focus,
+    textarea:focus,
+    select:focus {
         border-color: var(--focus-color);
         box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
         outline: none;
@@ -38,21 +87,51 @@
     }
 }
 
+.assets {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    iframe{
+        width: 100%;
+        height: 25rem;
+        padding: 0rem 4rem;
+    }
+    figcaption{
+        text-align: center;
+    }
+}
+
 .grid-2x2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.grid-2x2, fieldset, textarea, .chbox{
+.grid-2x2,
+fieldset,
+textarea,
+.chbox {
     margin-bottom: 2rem;
 }
+
+/*-------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
     .grid-2x2 {
         grid-template-columns: 1fr;
     }
+
     .form-element {
-        width: 100%; /* Asegurar que los elementos del formulario ocupen todo el ancho disponible */
+        width: 100%;
+        /* Asegurar que los elementos del formulario ocupen todo el ancho disponible */
+    }
+
+    .btn {
+        margin: 1rem 0;
+        padding: 2rem !important;
+        /* Asegurar que se aplique */
+        font-size: 2rem !important;
+        /* Margen arriba y abajo */
     }
 }

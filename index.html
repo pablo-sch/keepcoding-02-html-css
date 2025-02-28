@@ -27,9 +27,9 @@
 
             <nav class="nav">
                 <ul class="list">
-                    <li><a class="btn" href="proyects.html">Proyectos</a></li>
-                    <li><a class="btn" href="#skills">Skills</a></li>
-                    <li><a class="btn" href="#contact">Contacto</a></li>
+                    <li><a class="btn-header" href="proyects.html">Proyectos</a></li>
+                    <li><a class="btn-header" href="#skills">Skills</a></li>
+                    <li><a class="btn-header" href="#contact">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -98,7 +98,13 @@
         <section class="banner">
             <div class="banner-container">
                 <label class="banner-text">John-117</label>
-                <img src="./assets/app/Wallpaper_1.jpg" alt="Wallpaper">
+                <picture>
+                    <source srcset="assets/app/Wallpaper_1_(2560X1653).jpg" media="(min-width: 1025px)">
+                    <source srcset="assets/app/Wallpaper_1_(1024X661).jpg" media="(max-width: 1024px)">
+                    <source srcset="assets/app/Wallpaper_1_(768X496).jpg" media="(max-width: 768px)">
+                    <source srcset="assets/app/Wallpaper_1_(480X310).jpg" media="(max-width: 480px)">
+                    <img src="assets/app/Wallpaper_1_(2560X1653).jpg" alt="John-117 Wallpaper">
+                </picture>
             </div>
         </section>
         
@@ -157,7 +163,7 @@
                 <label for="remember">Quiero acceso a la newsletter</label>
             </div>
             <!-- ------------------------------------------------------------------------------------------------------------------- -->
-            <div>
+            <div class="nvr-btn">
                 <button class="btn" type="submit">Enviar</button>
                 <input class="btn secondary" type="reset" value="Reset">
             </div>

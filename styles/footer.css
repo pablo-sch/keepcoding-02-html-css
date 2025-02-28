@@ -1,8 +1,7 @@
 .footer {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(27,34,41,1) 92%, rgba(49,69,87,0.7539390756302521) 96%, rgba(49,69,87,0) 100%);
-            
-    flex-direction: column;
+  background: var(--bg-color-footer);
+
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -55,6 +54,31 @@
   height: clamp(28px, 5vw, 40px);
   width: auto;
   flex-shrink: 0;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+@media (min-width: 1025px) {
+  .footer {
+    padding: clamp(1rem, 2vw, 3rem); /* Ajusta dinámicamente el padding */
+  }
+
+  .footer ul {
+    padding: clamp(1rem, 2vw, 2rem) clamp(3rem, 5vw, 6rem);
+    gap: clamp(15px, 2vw, 30px);
+  }
+
+  .footer p {
+    font-size: clamp(14px, 1.5vw, 20px); /* Ajusta el tamaño del texto */
+  }
+
+  .footer img {
+    height: clamp(28px, 6vw, 50px); /* Ajusta dinámicamente el tamaño de las imágenes */
+  }
+
+  .footer a {
+    min-width: clamp(30px, 4vw, 50px); /* Asegura que los enlaces también crezcan */
+  }
 }
 
 @media (max-width: 768px) {

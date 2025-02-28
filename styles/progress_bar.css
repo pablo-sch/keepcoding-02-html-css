@@ -1,3 +1,59 @@
+/* Contenedor de la barra de progreso */
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Barra de progreso animada */
+.progress-bar {
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: var(--main-text-color);
+    max-width: 100%;
+    width: 0; /* Inicia en 0 */
+    animation: fillProgress 1.5s ease-in-out forwards;
+    animation-delay: var(--delay); /* Retrasa cada animación */
+    position: relative;
+}
+
+/* Pseudo-elemento para mostrar el porcentaje */
+.progress-bar::after {
+    content: attr(data-progress); /* Muestra el porcentaje */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    opacity: 0; /* Inicia invisible */
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: var(--delay); /* Se sincroniza con la barra */
+}
+
+/* Contenedor de las barras */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+    width: 100%;
+}
+
+/* Asignar los valores y retrasos individuales */
+.container div:nth-child(1) .progress-bar { --progress-width: 10%; --hue: 120;}
+.container div:nth-child(2) .progress-bar { --progress-width: 25%; --hue: 100;}
+.container div:nth-child(3) .progress-bar { --progress-width: 40%; --hue: 80;}
+.container div:nth-child(4) .progress-bar { --progress-width: 55%; --hue: 60;}
+.container div:nth-child(5) .progress-bar { --progress-width: 70%; --hue: 40;}
+.container div:nth-child(6) .progress-bar { --progress-width: 85%; --hue: 20;}
+
+/*-------------------------------------------------------------------------------------*/
+
 /* Animación para llenar la barra */
 @keyframes fillProgress {
     from {
@@ -29,14 +85,7 @@
     }
 }
 
-/* Contenedor de las barras */
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 10px;
-    width: 100%;
-}
+/*-------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
     .container {
@@ -45,47 +94,3 @@
     }
 }
 
-/* Contenedor de la barra de progreso */
-.progress-container {
-    width: 100%;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-/* Barra de progreso animada */
-.progress-bar {
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    color: white;
-    max-width: 100%;
-    width: 0; /* Inicia en 0 */
-    animation: fillProgress 1.5s ease-in-out forwards;
-    animation-delay: var(--delay); /* Retrasa cada animación */
-    position: relative;
-}
-
-/* Pseudo-elemento para mostrar el porcentaje */
-.progress-bar::after {
-    content: attr(data-progress); /* Muestra el porcentaje */
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    left: 0;
-    top: 0;
-    font-weight: bold;
-    opacity: 0; /* Inicia invisible */
-    animation: fadeIn 1.5s ease-in-out forwards;
-    animation-delay: var(--delay); /* Se sincroniza con la barra */
-}
-
-/* Asignar los valores y retrasos individuales */
-.container div:nth-child(1) .progress-bar { --progress-width: 10%; --hue: 120;}
-.container div:nth-child(2) .progress-bar { --progress-width: 25%; --hue: 100;}
-.container div:nth-child(3) .progress-bar { --progress-width: 40%; --hue: 80;}
-.container div:nth-child(4) .progress-bar { --progress-width: 55%; --hue: 60;}
-.container div:nth-child(5) .progress-bar { --progress-width: 70%; --hue: 40;}
-.container div:nth-child(6) .progress-bar { --progress-width: 85%; --hue: 20;}
