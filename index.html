@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sierra-117</title>
+    
+    <link rel="icon" type="image/png" href="assets/app/">
+
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/components.css">
@@ -18,8 +21,9 @@
     <h1 class="sr-only">Halo</h1>
     <header class="header">
         <a href="index.html">
-            <img src="./assets/app/Halo_Logo.png" alt="Logo">
-        </a>
+            <img class="logo"src="./assets/app/Halo_Logo.png" alt="Logo">
+<!--             <div class="logo"></div>
+ -->        </a>
 
         <div class="menu-container">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -40,12 +44,10 @@
             <div>
                 <h2>Sierra 117 (Master Chief)</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, hic expedita impedit odio sed,
-                    animi
-                    natus
-                    numquam ratione aspernatur, eius eos ad ipsa delectus corporis tempore voluptatibus labore
-                    perferendis
-                    mollitia.
+                    Soy Master Chief, un soldado mejorado cibernéticamente conocido como Spartan.
+                    Mi misión es proteger a la humanidad a toda costa, enfrentando amenazas como los Covenant y los Flood.
+                    Siempre estoy preparado para la batalla, y no importa lo difícil que sea, mi objetivo es asegurar la victoria.
+                    No me importa la gloria, solo cumplir con mi deber.
                 </p>
             </div>
 
@@ -55,37 +57,37 @@
                 </div>
                 <div class="container">
                     <div>
-                        <p>Skill Nº1</p>
+                        <p>Super Fuerza</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 10%;">10%</div>
                         </div>
                     </div>
                     <div>
-                        <p>Skill Nº2</p>
+                        <p>Tácticas Avanzadas</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 25%;">25%</div>
                         </div>
                     </div>
                     <div>
-                        <p>Skill Nº3</p>
+                        <p>Resistencia Mejorada</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 40%;">40%</div>
                         </div>
                     </div>
                     <div>
-                        <p>Skill Nº4</p>
+                        <p>Sigilo</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 55%;">55%</div>
                         </div>
                     </div>
                     <div>
-                        <p>Skill Nº5</p>
+                        <p>Manejo de Tecnología Avanzada</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 70%;">70%</div>
                         </div>
                     </div>
                     <div>
-                        <p>Skill Nº6</p>
+                        <p>Habilidad en Combate con Armas</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 85%;">85%</div>
                         </div>
@@ -127,8 +129,8 @@
                         placeholder="123-456-7890" inputmode="tel">
                 </div>
                 <div class="form-element">
-                    <label for="mail">Ingresa tu correo electrónico</label>
-                    <input required type="email" name="email" id="mail" placeholder="your@email.com">
+                    <label for="usergithub">GitHub Username</label>
+                    <input required type="text" name="usergithub" id="usergithub" autocomplete="off" pattern="^@[^\s]+" placeholder="@ususarioGitHub">
                 </div>
             </div>
             <!-- ------------------------------------------------------------------------------------------------------------------- -->
@@ -154,8 +156,8 @@
             <!-- ------------------------------------------------------------------------------------------------------------------- -->
             <div class="form-element textarea">
                 <label for="bio">Más Información</label>
-                <textarea required name="bio" id="bio" rows="6" placeholder="Máx. 100 caracteres"
-                    maxlength="100"></textarea>
+                <textarea required name="bio" id="bio" rows="6" placeholder="Máx. 180 caracteres"
+                    maxlength="180"></textarea>
             </div>
             <!-- ------------------------------------------------------------------------------------------------------------------- -->
             <div class="chbox">

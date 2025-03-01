@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sierra-117</title>
+
+    <link rel="icon" type="image/png" href="assets/app/icon.png">
+
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/components.css">
@@ -18,16 +21,23 @@
     <h1 class="sr-only">Halo</h1>
     <header class="header">
         <a href="index.html">
-            <img src="./assets/app/Halo_Logo.png" alt="Logo">
-        </a>
+            <img class="logo"src="./assets/app/Halo_Logo.png" alt="Logo">
+<!--             <div class="logo"></div>
+ -->        </a>
+
+        <div class="menu-container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">Menú</label>
+        </div>
     </header>
     <main>
         <section class="assets">
-            <video src="./assets/app/Greetings.mp4" autoplay controls></video>
+            <video src="./assets/app/Greetings.mp4" alt="Desactivar Mute" autoplay muted controls></video>
         </section>
+        
         <section class="">
             <h2>Mis Proyectos</h2>
-            <ul class="list">
+            <ul class="list-proyects">
                 <li>
                     <figure>
                         <img src="./proyects/wallpapers/Halo_Reach.jpg" alt="Halo Reach">
@@ -109,12 +119,12 @@
             </ul>
         </section>
 
-        <section class="assets">
+<!--         <section class="assets">
             <iframe src="https://www.youtube.com/embed/t-T6lEYJHm8" title="Halo 3 Warthog Run" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
-        </section>
+        </section> -->
     </main>
     <footer class="footer">
         <ul>

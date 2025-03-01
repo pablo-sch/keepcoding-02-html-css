@@ -1,17 +1,107 @@
-figure {
-    margin: 0;
+.list-proyects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Ajusta dinámicamente */
+    gap: 20px;
+    justify-content: center;
+    /* Centra los elementos */
+    align-items: start;
+    /* Asegura que las filas comiencen en el mismo punto */
+    padding: 0;
+    /* Elimina posibles desplazamientos */
 }
 
-.list {
+.list-proyects li {
     list-style: none;
+    /* Elimina los puntos de la lista */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-proyects figure {
     margin: 0;
     padding: 0;
+    text-align: center;
+    /* Centra las descripciones */
+    max-width: 100%;
+}
 
-    img {
-        width: 100%;
+.list-proyects img {
+    width: 100%;
+    max-width: 480px;
+    /* Evita que las imágenes sean más grandes de lo necesario */
+    height: auto;
+    object-fit: cover;
+}
+
+.list-proyects figcaption {
+    margin-top: 8px;
+    /* Espacio entre la imagen y el texto */
+    font-size: 1rem;
+    color: white;
+    /* Ajusta el color según tu diseño */
+}
+
+.assets {
+    display: flex;
+    justify-content: center;
+    /* Centra el video horizontalmente */
+    width: 100%;
+    overflow: hidden;
+    /* Para asegurarse de que no se desborde el contenido */
+    background-color: black;
+}
+
+.assets video {
+    width: 100%;
+    height: auto;
+    opacity: 0; /* Comienza invisible */
+
+    /* Mantiene la relación de aspecto */
+    visibility: hidden;
+    /* Evita que el video sea interactivo antes de la animación */
+    animation: fadeIn 2s ease-out forwards;
+    /* Animación de fade-in */
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
     }
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 20px;
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .list-proyects {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en pantallas pequeñas */
+    }
+
+}
+
+@media (min-width: 769px) {
+    .list-proyects {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columnas cuando el ancho sea mayor a 768px */
+        transition: transform 0.3s ease-in-out;
+        /* Transición suave */
+
+    }
+
+    .assets video {
+        width: 70%;
+    }
+
+    .list-proyects li:hover img {
+        transform: scale(1.1);
+        /* Aumenta un 10% al pasar el mouse */
+    }
 }

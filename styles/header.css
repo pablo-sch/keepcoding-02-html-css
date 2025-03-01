@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 
-.header img {
+.logo {
     max-width: 100%;
     height: auto;
     display: block;
@@ -73,10 +73,10 @@
     font-weight: bold;
     color: var(--main-text-color);
     background-color: var(--primary-color);
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
-.btn:hover {
+.btn-header:hover {
     background-color: var(--primary-color-hover);
     transform: scale(1.05);
 }
@@ -85,11 +85,13 @@
 
 @media (min-width: 1025px) {
     .header {
-        padding: clamp(1rem, 2vw, 2.5rem); /* Ajusta dinámicamente el padding */
+        padding: clamp(1rem, 2vw, 2.5rem);
+        /* Ajusta dinámicamente el padding */
     }
 
-    .header img {
-        max-height: clamp(40px, vw, 80px); /* Ajusta dinámicamente la altura de la imagen */
+    .logo {
+        max-height: clamp(40px, vw, 80px);
+        /* Ajusta dinámicamente la altura de la imagen */
         width: auto;
     }
 }
@@ -97,34 +99,43 @@
 /* Responsivo */
 @media (max-width: 1024px) {
     .header {
-        padding: 1rem 1.5rem; /* Nuevo: Ajusta el padding en pantallas medianas */
+        padding: 1rem 1.5rem;
+        /* Nuevo: Ajusta el padding en pantallas medianas */
     }
-    .header img {
+
+    .logo {
         max-height: 50px;
         width: 80%;
     }
+
     .menu-btn {
-        font-size: 1.8rem; /* Nuevo: Ajusta el tamaño de la palabra 'Menú' en pantallas medianas */
+        font-size: 1.8rem;
+        /* Nuevo: Ajusta el tamaño de la palabra 'Menú' en pantallas medianas */
     }
 }
 
 @media (max-width: 768px) {
     .header {
-        padding: 1rem 1rem; /* Nuevo: Ajusta el padding en pantallas pequeñas */
+        padding: 1rem 1rem;
+        /* Nuevo: Ajusta el padding en pantallas pequeñas */
         position: relative;
-        max-width: calc(100%); /* Nuevo: Ajusta el ancho en pantallas pequeñas */
+        max-width: calc(100%);
+        /* Nuevo: Ajusta el ancho en pantallas pequeñas */
     }
+
     .header a {
         max-width: 70%;
     }
-    .header img {
-        max-height: 60px;
-        width: 70%;
+
+    .logo {
+        content: url('../assets/app/Logo_Mobile.png');
+        max-height: 120px;
     }
 
     .menu-btn {
         display: block;
-        font-size: 1.5rem; /* Nuevo: Reduce el tamaño del texto en pantallas pequeñas */
+        font-size: 1.5rem;
+        /* Nuevo: Reduce el tamaño del texto en pantallas pequeñas */
         background: none;
         border: none;
         color: white;
@@ -136,7 +147,8 @@
         position: fixed;
         top: 0;
         right: -100%;
-        width: 250px; /* Nuevo: Define un ancho fijo del menú para evitar desbordes */
+        width: 250px;
+        /* Nuevo: Define un ancho fijo del menú para evitar desbordes */
         height: 100vh;
         background-color: var(--bg-color-header);
         text-align: right;
@@ -150,7 +162,7 @@
         overflow-x: hidden;
     }
 
-    .menu-toggle:checked ~ .nav {
+    .menu-toggle:checked~.nav {
         right: 0;
     }
 
@@ -162,25 +174,30 @@
     }
 
     .btn {
-        width: 90%; /* Nuevo: Ajusta el ancho de los botones en el menú desplegable */
+        width: 90%;
+        /* Nuevo: Ajusta el ancho de los botones en el menú desplegable */
         text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .header {
-        padding: 1rem 0.5rem; /* Nuevo: Ajusta el padding en pantallas muy pequeñas */
+        padding: 1rem 0.5rem;
+        /* Nuevo: Ajusta el padding en pantallas muy pequeñas */
     }
+
     .header a {
         max-width: 60%;
     }
-    .header img {
-        max-height: 40px;
+
+    .logo {
+        max-height: 100px;
         width: 60%;
     }
 
     .menu-btn {
         right: 10px;
-        font-size: 1.2rem; /* Nuevo: Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+        font-size: 1.2rem;
+        /* Nuevo: Reduce aún más el tamaño del texto en pantallas muy pequeñas */
     }
 }

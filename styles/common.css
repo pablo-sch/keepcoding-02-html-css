@@ -12,6 +12,11 @@
   --placeholder-color: #acacac;
   --focus-color: #007bff;
 
+
+  --primary-color: #3498db;
+  --primary-color-hover: #2980b9;
+  --main-text-color: #fff;
+
   font-size: 16px;
 }
 
