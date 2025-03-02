@@ -2,23 +2,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: auto;
+    width: calc(100% + 10rem);
     overflow: hidden;
+
+    margin: 0 -4rem;
 }
 
 .banner-container {
     position: relative;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .banner img {
     width: 100%;
+    height: auto;
+
     display: block;
     border-radius: 10px;
 }
-
-
 
 .banner-text {
     position: absolute;
@@ -37,7 +40,11 @@
 
 @media (max-width: 768px) {
     .btn {
-        font-size: 1rem; /* Reduce el tamaño en móviles */
+        font-size: 1rem;
         padding: 0.5rem 1rem;
+    }
+    .banner {
+        width: 100%;
+        margin: 0;
     }
 }

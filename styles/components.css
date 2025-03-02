@@ -1,12 +1,9 @@
 .btn {
-
     text-align: center;
     display: inline-block;
 
-
-    background-color: #122336;
-    /* Azul */
-    color: white;
+    background-color: var(--btn-color);
+    color: var(--main-text-color);
     border: none;
     font-size: 16px;
     font-weight: bold;
@@ -20,26 +17,23 @@
     padding: 0.75rem 1.5rem;
 }
 
-.nvr-btn {
-    text-align: center;
-    /* Centrar el texto dentro del botón */
-}
-
-
-
 .btn:hover {
-    background-color: #0056b3 !important;
-    /* Azul más oscuro */
-    transform: scale(1.05);
+    background-color: var(--btn-color-hover) !important;
+}
+
+.btn.secondary {
+    background-color: var(--btn-secondary-color) !important;
+}
+
+.btn.secondary:hover {
+    background-color: var(--btn-secondary-color-hover) !important;
 }
 
 
-.btn:active {
-    background-color: #003f80 !important;
-    /* Azul aún más oscuro */
-    transform: scale(0.98);
-}
 
+.nvr-btn {
+    text-align: left;
+}
 
 .form-element {
     display: flex;
@@ -60,7 +54,6 @@
         color: var(--main-text-color);
         transition: border 0.3s ease, box-shadow 0.3s ease;
         width: 100%;
-        /* Ajuste para que no se rompan en resoluciones bajas */
         max-width: 100%;
     }
 
@@ -110,14 +103,11 @@ textarea,
 
     .form-element {
         width: 100%;
-        /* Asegurar que los elementos del formulario ocupen todo el ancho disponible */
     }
 
     .btn {
         margin: 1rem 0;
         padding: 2rem !important;
-        /* Asegurar que se aplique */
         font-size: 2rem !important;
-        /* Margen arriba y abajo */
     }
 }

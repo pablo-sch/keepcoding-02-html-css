@@ -7,15 +7,22 @@
   --bg-color-footer-2: #a2a3a6;
 
   --main-text-color: #FFF;
+
   --input-bg-color: #767676;
   --border-color: #ccc;
   --placeholder-color: #acacac;
   --focus-color: #007bff;
 
+  --btn-header-color: #281a36;
+  --btn-header-color-hover: #3a254f;
+
+  --btn-color: #161623;
+  --btn-color-hover: #383672;
+  --btn-secondary-color: #8e8e8e;
+  --btn-secondary-color-hover: #bfbfbf;
 
   --primary-color: #3498db;
   --primary-color-hover: #2980b9;
-  --main-text-color: #fff;
 
   font-size: 16px;
 }
@@ -40,15 +47,14 @@ main {
   width: 90%;
   max-width: 1000px;
   margin: auto;
-  padding: 2rem 4rem 2rem;
-  min-height: 100vh; /* Ocupa el 100% de la pantalla */
+  padding: 2rem 6rem 2rem;
+  min-height: 100vh;
   background-color: var(--bg-color);
   
-  /* Centramos los elementos en una columna */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Espaciado entre secciones */
+  gap: 20px;
 }
 
 video, iframe {
@@ -80,13 +86,15 @@ p {
 
 .info {
   margin-bottom: 2rem;
-  /* Ajusta el valor según sea necesario */
 }
 
 .banner {
   margin-bottom: 2rem !important;
-  /* Forzamos el margen */
   display: block;
+}
+
+.form-container {
+  width: 100%;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -111,34 +119,28 @@ p {
 @media (max-width: 768px) {
   main {
     width: 100%;
-    /* Usa todo el ancho disponible */
     padding: 2rem;
-    /* Reduce el padding en pantallas pequeñas */
   }
 }
 
-/* Pantallas grandes (mayores a 1024px) */
 @media (min-width: 1025px) {
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(3840x2160).jpg');
   }
 }
 
-/* Pantallas medianas (hasta 1024px) */
 @media (max-width: 1024px) {
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(1024x576).jpg');
   }
 }
 
-/* Pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(768x432).jpg');
   }
 }
 
-/* Pantallas muy pequeñas (hasta 480px) */
 @media (max-width: 480px) {
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(480x270).jpg');

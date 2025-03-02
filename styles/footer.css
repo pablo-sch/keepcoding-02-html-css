@@ -60,7 +60,7 @@
 
 @media (min-width: 1025px) {
   .footer {
-    padding: clamp(1rem, 2vw, 3rem); /* Ajusta dinámicamente el padding */
+    padding: clamp(1rem, 2vw, 3rem);
   }
 
   .footer ul {
@@ -69,15 +69,15 @@
   }
 
   .footer p {
-    font-size: clamp(14px, 1.5vw, 20px); /* Ajusta el tamaño del texto */
+    font-size: clamp(14px, 1.5vw, 20px);
   }
 
   .footer img {
-    height: clamp(28px, 6vw, 50px); /* Ajusta dinámicamente el tamaño de las imágenes */
+    height: clamp(28px, 6vw, 50px);
   }
 
   .footer a {
-    min-width: clamp(30px, 4vw, 50px); /* Asegura que los enlaces también crezcan */
+    min-width: clamp(30px, 4vw, 50px);
   }
 }
 
