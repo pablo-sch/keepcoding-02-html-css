@@ -44,17 +44,23 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: auto;
-  padding: 2rem 6rem 2rem;
+  padding: 1.5rem 2rem 1.5rem;
   min-height: 100vh;
   background-color: var(--bg-color);
+
+  font-size: 1rem;
   
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 0.9rem;
+}
+
+.main-bg{
+  background-image: url('/assets/app/Wallpaper_2_(480x270).jpg');
 }
 
 video, iframe {
@@ -69,28 +75,24 @@ a {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
+h1, h2, h3, h4, p {
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 p {
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /*-------------------------------------------------------------------------------------*/
 
 .info {
-  margin-bottom: 2rem;
-}
+  display: flex;
+  flex-direction: column;
 
-.banner {
-  margin-bottom: 2rem !important;
-  display: block;
+  margin-bottom: 2rem;
+  gap: 1rem
 }
 
 .form-container {
@@ -115,34 +117,33 @@ p {
 }
 
 /*-------------------------------------------------------------------------------------*/
-
-@media (max-width: 768px) {
-  main {
-    width: 100%;
-    padding: 2rem;
-  }
-}
-
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(3840x2160).jpg');
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
+  main{
+    padding: 2rem 4rem 2rem;
+    width: 90%;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  h1, h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(1024x576).jpg');
   }
+  
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(768x432).jpg');
-  }
-}
-
-@media (max-width: 480px) {
-  .main-bg {
-    background-image: url('/assets/app/Wallpaper_2_(480x270).jpg');
   }
 }

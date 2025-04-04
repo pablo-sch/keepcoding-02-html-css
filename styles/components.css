@@ -1,20 +1,22 @@
-.btn {
-    text-align: center;
-    display: inline-block;
+/*-------------------------------------------------------------------------------------*/
 
+.btn {
+
+    padding: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    border-radius: 0.5rem;
+    border: none;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
     background-color: var(--btn-color);
     color: var(--main-text-color);
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    text-transform: uppercase;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: clamp(1rem, 2vw, 1.5rem);
-
-    padding: 0.75rem 1.5rem;
 }
 
 .btn:hover {
@@ -29,15 +31,16 @@
     background-color: var(--btn-secondary-color-hover) !important;
 }
 
-
-
 .nvr-btn {
     text-align: left;
 }
 
+/*-------------------------------------------------------------------------------------*/
+
 .form-element {
     display: flex;
     flex-direction: column;
+    font-size: 0.9rem;
 
     label {
         margin-bottom: 0.5rem;
@@ -48,7 +51,7 @@
     textarea,
     select {
         border: 1px solid var(--border-color);
-        padding: 1rem;
+        padding: 0.7rem;
         border-radius: 5px;
         background-color: var(--input-bg-color);
         color: var(--main-text-color);
@@ -72,7 +75,7 @@
 
     &.row {
         flex-direction: row;
-        gap: 10px;
+        gap: 1rem;
 
         label {
             margin: 0;
@@ -80,6 +83,7 @@
     }
 }
 
+/*-------------------------------------------------------------------------------------*/
 
 .grid-2x2 {
     display: grid;
@@ -96,18 +100,14 @@ textarea,
 
 /*-------------------------------------------------------------------------------------*/
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
     .grid-2x2 {
         grid-template-columns: 1fr;
     }
 
     .form-element {
         width: 100%;
-    }
-
-    .btn {
-        margin: 1rem 0;
-        padding: 2rem !important;
-        font-size: 2rem !important;
+        font-size: 1.4rem;
+        padding: 1rem;
     }
 }

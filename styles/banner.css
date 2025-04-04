@@ -2,10 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% + 10rem);
     overflow: hidden;
-
-    margin: 0 -4rem;
 }
 
 .banner-container {
@@ -28,23 +25,18 @@
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: bold;
-    color: white;
     background: rgba(0, 0, 0, 0.6);
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
 }
 
 /*-------------------------------------------------------------------------------------*/
 
-@media (max-width: 768px) {
-    .btn {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
+@media (min-width: 768px) {
     .banner {
-        width: 100%;
-        margin: 0;
+        width: calc(100% + 6rem);
+        margin: 0 -4rem;
     }
 }
