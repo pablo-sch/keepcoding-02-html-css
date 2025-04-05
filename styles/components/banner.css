@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
 }
 
 .banner-container {
     position: relative;
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 

@@ -10,31 +10,40 @@
 
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/components.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/proyects.css">
-
     <link rel="stylesheet" href="./styles/footer.css">
+
+    <link rel="stylesheet" href="./styles/components/components.css">
+    <link rel="stylesheet" href="./styles/components/proyects.css">
+
 </head>
 
 <body class="main-bg">
     <h1 class="sr-only">Halo</h1>
     <header class="header">
         <a href="index.html">
-            <img class="logo"src="./assets/app/Halo_Logo.png" alt="Logo">
-<!--             <div class="logo"></div>
- -->        </a>
+            <img class="logo" src="./assets/app/Logo_Mobile.png" alt="Logo">
+            <!--<div class="logo"></div>-->
+        </a>
 
         <div class="menu-container">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-btn">Menú</label>
+
+            <nav class="nav">
+                <ul class="list">
+                    <li><a class="btn-header" href="proyects.html">Proyectos</a></li>
+                    <li><a class="btn-header" href="#skills">Skills</a></li>
+                    <li><a class="btn-header" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main >
+    <main>
         <section class="assets">
             <video src="./assets/app/Greetings.mp4" alt="Desactivar Mute" autoplay muted controls></video>
         </section>
-        
+
         <section class="">
             <h2>Mis Proyectos</h2>
             <ul class="list-proyects">
@@ -119,7 +128,7 @@
             </ul>
         </section>
 
-<!--         <section class="assets">
+        <!--         <section class="assets">
             <iframe src="https://www.youtube.com/embed/t-T6lEYJHm8" title="Halo 3 Warthog Run" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>

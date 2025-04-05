@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sierra-117</title>
-    
-    <link rel="icon" type="image/png" href="assets/app/">
+
+    <link rel="icon" type="image/png" href="assets/app/icon.png">
 
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/components.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/banner.css">
-    <link rel="stylesheet" href="./styles/progress_bar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+
+    <link rel="stylesheet" href="./styles/components/components.css">
+    <link rel="stylesheet" href="./styles/components/banner.css">
+    <link rel="stylesheet" href="./styles/components/progress_bar.css">
 </head>
 
-<body class="main-bg" >
+<body class="main-bg">
     <h1 class="sr-only">Halo</h1>
     <header class="header">
         <a href="index.html">
             <img class="logo" src="./assets/app/Logo_Mobile.png" alt="Logo">
-<!--             <div class="logo"></div>
- -->        </a>
+            <!--<div class="logo"></div>-->
+        </a>
 
         <div class="menu-container">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -45,57 +46,57 @@
                 <h2>Sierra 117 (Master Chief)</h2>
                 <p>
                     Soy Master Chief, un soldado mejorado cibernéticamente conocido como Spartan.
-                    Mi misión es proteger a la humanidad a toda costa, enfrentando amenazas como los Covenant y los Flood.
-                    Siempre estoy preparado para la batalla, y no importa lo difícil que sea, mi objetivo es asegurar la victoria.
+                    Mi misión es proteger a la humanidad a toda costa, enfrentando amenazas como los Covenant y los
+                    Flood.
+                    Siempre estoy preparado para la batalla, y no importa lo difícil que sea, mi objetivo es asegurar la
+                    victoria.
                     No me importa la gloria, solo cumplir con mi deber.
                 </p>
             </div>
+        </section>
 
-            <div>
+        <section class="progresses-bars">
+            <h2>Mis Skills</h2>
+            <div class="progresses-bars-container">
                 <div>
-                    <h2>Mis Skills</h2>
+                    <span>Super Fuerza</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 10%;">10%</div>
+                    </div>
                 </div>
-                <div class="container">
-                    <div>
-                        <p>Super Fuerza</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="width: 10%;">10%</div>
-                        </div>
+                <div>
+                    <span>Tácticas Avanzadas</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 25%;">25%</div>
                     </div>
-                    <div>
-                        <p>Tácticas Avanzadas</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="width: 25%;">25%</div>
-                        </div>
+                </div>
+                <div>
+                    <span>Resistencia Mejorada</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 40%;">40%</div>
                     </div>
-                    <div>
-                        <p>Resistencia Mejorada</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="width: 40%;">40%</div>
-                        </div>
+                </div>
+                <div>
+                    <span>Sigilo</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 55%;">55%</div>
                     </div>
-                    <div>
-                        <p>Sigilo</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="width: 55%;">55%</div>
-                        </div>
+                </div>
+                <div>
+                    <span>Manejo de Tecnología Avanzada</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;">70%</div>
                     </div>
-                    <div>
-                        <p>Manejo de Tecnología Avanzada</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="width: 70%;">70%</div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Habilidad en Combate con Armas</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="width: 85%;">85%</div>
-                        </div>
+                </div>
+                <div>
+                    <span>Habilidad en Combate con Armas</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 85%;">85%</div>
                     </div>
                 </div>
             </div>
-
         </section>
+
         <!-- ********************************************************************************************************************************* -->
         <section class="banner">
             <div class="banner-container">
@@ -130,7 +131,8 @@
                     </div>
                     <div class="form-element">
                         <label for="usergithub">GitHub Username</label>
-                        <input required type="text" name="usergithub" id="usergithub" autocomplete="off" pattern="^@[^\s]+" placeholder="@ususarioGitHub">
+                        <input required type="text" name="usergithub" id="usergithub" autocomplete="off"
+                            pattern="^@[^\s]+" placeholder="@ususarioGitHub">
                     </div>
                 </div>
                 <!-- ------------------------------------------------------------------------------------------------------------------- -->
@@ -202,4 +204,5 @@
     </footer>
 
 </body>
+
 </html>
