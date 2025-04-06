@@ -29,7 +29,7 @@
   font-size: clamp(2px, 5vw, 16px);
   /*clamp(min, ideal, max)*/
 
- }
+}
 
 /*-------------------------------------------------------------------------------------*/
 
@@ -42,15 +42,18 @@
 
 /*-------------------------------------------------------------------------------------*/
 
+
 body {
+  min-height: 100vh;
+  height: 100%;
+
   font-family: 'Handel';
   color: var(--main-text-color);
-
 }
 
 main {
   margin: auto;
-  padding: 1.5rem 2rem 1.5rem;
+  padding: 1.5rem 2rem 12rem;
 
   display: flex;
   flex-direction: column;
@@ -61,14 +64,18 @@ main {
   max-width: 1000px;
   min-height: 100vh;
 
+  position: relative;
+  z-index: 9;
+
   background-color: var(--bg-color);
 }
 
-.main-bg{
+.main-bg {
   background-image: url('/assets/app/Wallpaper_2_(480x270).jpg');
 }
 
-video, iframe {
+video,
+iframe {
   max-width: 100%;
 }
 
@@ -80,7 +87,11 @@ a {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -129,14 +140,15 @@ p {
 }
 
 @media (min-width: 768px) {
-  main{
-    padding: 2rem 4rem 2rem;
+  main {
+    padding: 2rem 4rem 12rem;
     width: 90%;
   }
+
   .main-bg {
     background-image: url('/assets/app/Wallpaper_2_(1024x576).jpg');
   }
-  
+
 }
 
 @media (min-width: 480px) {

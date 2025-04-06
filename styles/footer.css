@@ -1,12 +1,17 @@
 .footer {
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  
-  overflow: hidden;
+  margin-top: -9.5rem;
+  padding-top: 2rem;
 
-  background: var(--bg-color-footer);
+  display: flex;
+  flex-direction: column; 
+  overflow: hidden;
+  align-items: center;
+
+  position: relative;
+  z-index: 10;
+
+  background: linear-gradient(0deg, var(--bg-color-footer) 0%, var(--bg-color-footer) 80%, transparent 100%);
+
 }
 
 .footer ul {
@@ -14,14 +19,14 @@
   padding: 1rem 3rem;
 
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
-  max-width: 100%;
-  
+  width: fit-content;
+
   gap: 1rem;
   border-radius: 0.8rem;
 
-  background-color: var(--bg-color-footer-2);
+  background: var(--bg-color-footer-2);
+
 }
 
 .footer p {
@@ -55,6 +60,7 @@
   .footer ul {
     margin: 1rem 3rem;
   }
+
   .footer img {
     height: 2rem
   }
