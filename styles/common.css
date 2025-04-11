@@ -58,12 +58,10 @@ body {
 }
 
 .body-bg {
-  width: 100vw;
-  height: 100vh;
-
   background-position: center center;
   background-size: cover;
-
+  background-repeat: no-repeat;
+  
   background-image: url('/assets/app/background/Wallpaper_2_(480x270).jpg');
 }
 
@@ -122,6 +120,7 @@ p {
 .info {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   gap: 2rem
 }
@@ -129,6 +128,9 @@ p {
 .form-container {
   width: 100%;
 }
+
+/*-------------------------------------------------------------------------------------*/
+
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
