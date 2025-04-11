@@ -71,7 +71,7 @@ main {
 }
 
 .main-bg {
-  background-image: url('/assets/app/Wallpaper_2_(480x270).jpg');
+  background-image: url('/assets/app/background/Wallpaper_2_(480x270).jpg');
 }
 
 video,
@@ -135,7 +135,7 @@ p {
 /*-------------------------------------------------------------------------------------*/
 @media (min-width: 1024px) {
   .main-bg {
-    background-image: url('/assets/app/Wallpaper_2_(3840x2160).jpg');
+    background-image: url('/assets/app/background/Wallpaper_2_(3840x2160).jpg');
   }
 }
 
@@ -146,13 +146,13 @@ p {
   }
 
   .main-bg {
-    background-image: url('/assets/app/Wallpaper_2_(1024x576).jpg');
+    background-image: url('/assets/app/background/Wallpaper_2_(1024x576).jpg');
   }
 
 }
 
 @media (min-width: 480px) {
   .main-bg {
-    background-image: url('/assets/app/Wallpaper_2_(768x432).jpg');
+    background-image: url('/assets/app/background/Wallpaper_2_(768x432).jpg');
   }
 }
