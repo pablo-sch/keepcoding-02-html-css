@@ -18,15 +18,10 @@
 .menu-container {
     position: relative;
 
-    z-index: 1;
 }
 
 .menu-toggle {
     display: none;
-}
-
-.menu-toggle:checked+.menu-btn+.nav {
-    display: block;
 }
 
 .nav {
@@ -40,7 +35,11 @@
     border-radius: 0.5rem;
     background: var(--btn-header-color-hover);
 
-    z-index: 1;
+    z-index: 20;
+}
+
+.menu-toggle:checked+.menu-btn+.nav {
+    display: block;
 }
 
 .nav ul li a {
@@ -97,7 +96,7 @@
     }
 
     .logo {
-        content: url('../assets/app/Halo_Logo.png');
+        content: url('https://pablosch26.github.io/keepcoding-html-css-submission-2/assets/app/Halo_Logo.png');
         height: 2.5rem;
     }
 

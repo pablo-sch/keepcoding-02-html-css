@@ -41,7 +41,7 @@
 
 @font-face {
   font-family: 'Handel';
-  src: url('/assets/fonts/HandelGo.woff2') format('woff2');
+  src: url('https://pablosch26.github.io/keepcoding-html-css-submission-2/assets/fonts/HandelGo.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -59,10 +59,12 @@ body {
 
 .body-bg {
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100% auto;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+
   
-  background-image: url('/assets/app/background/Wallpaper_2_(480x270).jpg');
+  background-image: url('https://pablosch26.github.io/keepcoding-html-css-submission-2/assets/app/background/Wallpaper_2_(480x270).jpg');
 }
 
 .body-error-bg {
@@ -152,7 +154,7 @@ p {
 /*-------------------------------------------------------------------------------------*/
 @media (min-width: 480px) {
   .body-bg {
-    background-image: url('/assets/app/background/Wallpaper_2_(768x432).jpg');
+    background-image: url('https://pablosch26.github.io/keepcoding-html-css-submission-2/assets/app/background/Wallpaper_2_(768x432).jpg');
   }
 }
 
@@ -163,13 +165,13 @@ p {
   }
 
   .body-bg {
-    background-image: url('/assets/app/background/Wallpaper_2_(1024x576).jpg');
+    background-image: url('https://pablosch26.github.io/keepcoding-html-css-submission-2/assets/app/background/Wallpaper_2_(1024x576).jpg');
   }
 
 }
 
 @media (min-width: 1024px) {
   .body-bg {
-    background-image: url('/assets/app/background/Wallpaper_2_(3840x2160).jpg');
+    background-image: url('https://pablosch26.github.io/keepcoding-html-css-submission-2/assets/app/background/Wallpaper_2_(3840x2160).jpg');
   }
 }
