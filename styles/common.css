@@ -1,5 +1,8 @@
 :root {
   --bg-color: #25252ce8;
+  --bg-color-2: #19191b;
+  --bg-color-3: #5e5e69;
+
 
   --bg-color-header: #0d0d0d;
 
@@ -24,6 +27,9 @@
   --primary-color: #3498db;
   --primary-color-hover: #2980b9;
 
+  --title-color: #72AADF;
+  --title-border-color:#3C4E7A;
+  
   --footer-text: #ccc;
 
   font-size: clamp(2px, 5vw, 16px);
@@ -51,7 +57,21 @@ body {
   color: var(--main-text-color);
 }
 
-main {
+.body-bg {
+  width: 100vw;
+  height: 100vh;
+
+  background-position: center center;
+  background-size: cover;
+
+  background-image: url('/assets/app/background/Wallpaper_2_(480x270).jpg');
+}
+
+.body-error-bg {
+  background-color: var(--bg-color-2);
+}
+
+.main-format {
   margin: auto;
   padding: 1.5rem 2rem 12rem;
 
@@ -65,13 +85,8 @@ main {
   min-height: 100vh;
 
   position: relative;
-  z-index: 9;
 
   background-color: var(--bg-color);
-}
-
-.main-bg {
-  background-image: url('/assets/app/background/Wallpaper_2_(480x270).jpg');
 }
 
 video,
@@ -92,14 +107,14 @@ h2,
 h3,
 h4,
 p {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 0.5rem;
+
+  text-align: justify;
 }
 
 p {
-  margin: 0;
-  text-align: justify;
-
+  white-space: pre-line;
 }
 
 /*-------------------------------------------------------------------------------------*/
@@ -133,26 +148,26 @@ p {
 }
 
 /*-------------------------------------------------------------------------------------*/
-@media (min-width: 1024px) {
-  .main-bg {
-    background-image: url('/assets/app/background/Wallpaper_2_(3840x2160).jpg');
+@media (min-width: 480px) {
+  .body-bg {
+    background-image: url('/assets/app/background/Wallpaper_2_(768x432).jpg');
   }
 }
 
 @media (min-width: 768px) {
-  main {
+  .main-format {
     padding: 2rem 4rem 12rem;
     width: 90%;
   }
 
-  .main-bg {
+  .body-bg {
     background-image: url('/assets/app/background/Wallpaper_2_(1024x576).jpg');
   }
 
 }
 
-@media (min-width: 480px) {
-  .main-bg {
-    background-image: url('/assets/app/background/Wallpaper_2_(768x432).jpg');
+@media (min-width: 1024px) {
+  .body-bg {
+    background-image: url('/assets/app/background/Wallpaper_2_(3840x2160).jpg');
   }
 }
