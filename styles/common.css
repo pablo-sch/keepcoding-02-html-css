@@ -3,7 +3,6 @@
   --bg-color-2: #19191b;
   --bg-color-3: #5e5e69;
 
-
   --bg-color-header: #0d0d0d;
 
   --bg-color-footer: #070b0f;
@@ -53,13 +52,14 @@ body {
   min-height: 100vh;
   height: 100%;
 
-  font-family: 'Handel';
+  font-family: 'Handel', sans-serif;
+
   color: var(--main-text-color);
 }
 
 .body-bg {
   background-position: center center;
-  background-size: 100% auto;
+  background-size: auto 100%;
     background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -110,10 +110,11 @@ p {
   margin: 0;
   margin-bottom: 0.5rem;
 
-  text-align: justify;
 }
 
 p {
+  text-align: justify;
+
   white-space: pre-line;
 }
 
