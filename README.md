@@ -1,83 +1,106 @@
-# Entrega Proyecto de CSS y HTML
+# Select your language
 
-Este proyecto fue creado con el fin de ejercitar y demostrar los conocimientos adquiridos en clases virtuales sobre HTML y CSS.
+- 🇪🇸 [Español](README.es.md)
+- 🇩🇪 [Deutsch](README.de.md)
 
-## El proyecto abarca los siguientes aspectos clave:
+# CSS and HTML Project Submission
 
-- Implementación de **HTML** estructurado y su interacción con el **DOM**, acompañado de estilos en cascada mediante **CSS**.
-- Uso adecuado de la **semántica** de las etiquetas HTML, combinado con reglas CSS que mejoran la accesibilidad y el rendimiento.
-- Desarrollo de **media queries** para garantizar un diseño **responsivo** y adaptable a diversas resoluciones de pantalla.
-- Creación de **animaciones** y **transiciones** dinámicas utilizando **CSS** para mejorar la experiencia de usuario.
-- Personalización de animaciones mediante el uso de **keyframes**, logrando efectos visuales únicos.
-- Diseño de un **layout responsivo** mediante el uso de **grids** en CSS para una estructura flexible y escalable.
-- Aplicación de una correcta **jerarquía CSS**, asegurando la correcta estilización y coherencia visual de los elementos.
-- Análisis del comportamiento de las diferentes **etiquetas HTML** y su interacción con **CSS** para optimizar la presentación del contenido.
-- Implementación de **inputs** con **validaciones** eficientes, asegurando la correcta interacción del usuario con los formularios.
-- Incorporación de **links** para la navegación a otros sitios web, mejorando la conectividad y accesibilidad.
-- Garantía de la **cohesión y limpieza del código**, con una estructura organizada que facilita el mantenimiento y la escalabilidad del proyecto.
+This project was created with the purpose of practicing and demonstrating the knowledge acquired in virtual classes about HTML and CSS.
 
-## Objetivo del Proyecto
-El objetivo principal de este proyecto es desarrollar un **portfolio** personal (o de un personaje de ficción), aplicando los conocimientos adquiridos en clase. La idea es crear una presentación interactiva y visualmente atractiva que muestre las habilidades y proyectos de nuestro personaje elegido, utilizando las tecnologías y prácticas aprendidas durante el curso.
+## The project covers the following key aspects:
 
-## Detalles del Proyecto
+- Implementation of structured **HTML** and its interaction with the **DOM**, accompanied by cascading styles using **CSS**.
+- Proper use of **semantic** HTML tags, combined with CSS rules that enhance accessibility and performance.
+- Development of **media queries** to ensure a **responsive** design adaptable to various screen resolutions.
+- Creation of dynamic **animations** and **transitions** using **CSS** to enhance user experience.
+- Customization of animations through the use of **keyframes**, achieving unique visual effects.
+- Design of a **responsive layout** using **CSS grids** for a flexible and scalable structure.
+- Application of correct **CSS hierarchy**, ensuring proper styling and visual consistency of elements.
+- Analysis of the behavior of different **HTML tags** and their interaction with **CSS** to optimize content presentation.
+- Implementation of **input fields** with effective **validations**, ensuring proper user interaction with forms.
+- Inclusion of **links** for navigation to other websites, improving connectivity and accessibility.
+- Guarantee of **code cohesion and cleanliness**, with an organized structure that facilitates project maintenance and scalability.
 
-- Se debe de crear un **header**, en el que los enlaces deben tener el estado `hover` suavizado con una transición. Estos links no son necesarios en la versión móvil.
-- Una sección con una descripción de **nosotros** y nuestras habilidades representadas mediante **barras de progreso**. Estas barras deben estar animadas utilizando **CSS**.
-- Un **banner** que deberá tener una imagen de fondo. En pantallas móviles, debe mostrarse otra imagen diferente (Implementar **media queries** o **Responsive images**).
-- Formulario de contacto mediante **inputs**. Todos deben tener tanto los tipos correctos como la validación HTML de cada campo:
-   - **Nombre**, **Apellidos**, **Teléfono** (campos requeridos).
-   - **Radio input** para responder a la pregunta "¿cómo me conociste?" (campo requerido):
-      - Universidad
-      - Keepcoding kick-off
-      - Colegio
-      - En GitHub
-   - **Tag de GitHub** (Usar expresión regular `^@[^\s]+` para la validación - `@username`).
-   - **Textarea** con más información del usuario (máximo 180 caracteres) (campo requerido).
-   - **Checkbox** para el acceso a la **newsletter**.
-   - Botones de **guardar** y **reset**.
-- **Footer** con enlaces a nuestras redes sociales mediante recursos externos.
-- Nueva página que contenga un **video** que se reproduzca automáticamente al entrar en la web y aparezca con una animación de **fadeIn**.
-- Crear una nueva página con un **grid** que muestre nuestros proyectos.
+## Project Objective
 
-## Tecnologías
+The main objective of this project is to develop a personal **portfolio** (or one for a fictional character), applying the knowledge acquired in class. The idea is to create an interactive and visually attractive presentation that showcases the skills and projects of our chosen character, using the technologies and practices learned during the course.
 
-Este proyecto fue desarrollado utilizando exclusivamente con las siguientes tecnologías:
+## Project Details
 
-- **HTML**: Para la estructuración del contenido y la creación de la estructura de la página web.
-- **CSS**: Para el diseño y estilo visual de la página, asegurando una experiencia de usuario atractiva y coherente.
+- A **header** must be created, where links should have a smooth `hover` transition effect. These links are not necessary on the mobile version.
+- A section with an **about us** description and our skills represented through **progress bars**. These bars must be animated using **CSS**.
+- A **banner** that must have a background image. On mobile screens, a different image should be displayed (implement **media queries** or **responsive images**).
+- A contact form using **input fields**. All fields must use the correct types and proper HTML validation:
+  - **First Name**, **Last Name**, **Phone Number** (required fields).
+  - **Radio input** to answer the question "How did you hear about me?" (required field):
+    - University
+    - Keepcoding kick-off
+    - School
+    - On GitHub
+  - **GitHub tag** (Use regex `^@[^\s]+` for validation - `@username`).
+  - **Textarea** for more user information (max 180 characters) (required field).
+  - **Checkbox** for **newsletter** subscription.
+  - **Save** and **reset** buttons.
+- **Footer** with links to our social media using external resources.
+- A new page containing a **video** that plays automatically when the user enters the website, with a **fadeIn** animation.
+- Create another page with a **grid** displaying our projects.
 
-## Instrucciones de Instalación y Uso
+## Technologies
 
-### Requisitos de Software
+This project was developed exclusively using the following technologies:
 
-- **Git** (Requerido)
-- **SourceTree** (Opcional)
-- **Visual Studio** (Ejecutado en la versión 1.99.0) (Requerido)
-- **Live Server** (Addon de Visual Studio, Opcional)
+- **HTML**: For content structuring and creating the webpage layout.
+- **CSS**: For the visual design and styling of the page, ensuring an attractive and consistent user experience.
 
-### Descripción de los Programas
+## Installation and Usage Instructions
 
-- **Git**: Herramienta de control de versiones. Es imprescindible para clonar el repositorio.
-- **SourceTree**: Una herramienta visual para gestionar repositorios Git. Permite interactuar con Git de forma sencilla sin necesidad de utilizar la línea de comandos.
-- **Visual Studio**: Entorno de desarrollo integrado (IDE) necesario para ejecutar el proyecto. Asegúrate de utilizar la versión 1.99.0 para evitar problemas de compatibilidad.
-- **Live Server**: Extensión de Visual Studio que permite visualizar los archivos HTML de manera local en un navegador, mostrando los cambios en tiempo real.
+### Software Requirements
 
-### Pasos para utilizar este proyecto
+- **Git** (Required)
+- **SourceTree** (Optional)
+- **Visual Studio** (Version 1.99.0 used) (Required)
+- **Live Server** (Visual Studio Addon, Optional)
 
-1. Clona el repositorio de GitHub utilizando **SourceTree** o directamente con el siguiente comando mediante Git:
+### Software Descriptions
+
+- **Git**: Version control tool. Essential for cloning the repository.
+- **SourceTree**: A visual tool to manage Git repositories. Allows easy interaction with Git without using the command line.
+- **Visual Studio**: Integrated Development Environment (IDE) needed to run the project. Make sure to use version 1.99.0 to avoid compatibility issues.
+- **Live Server**: Visual Studio extension that allows you to view HTML files locally in a browser and see real-time changes.
+
+### Steps to Use This Project
+
+1. Clone the GitHub repository using **SourceTree** or directly with the following Git command:
 
    ```bash
    git clone https://github.com/PabloSch26/keepcoding-html-css-submission-2.git
 
-2.1 Una vez clonado el repositorio, abre el proyecto en Visual Studio agregando el directorio del proyecto a tu espacio de trabajo.
+2. Once the repository is cloned:
 
-2.2 Abre los archivos index.html, proyect.html, 404.html y 500.html con Live Server para previsualizarlos en el navegador.
+2.1 Open the project in Visual Studio by adding the project folder to your workspace.
 
-### Notas
+2.2 Open the files index.html, proyect.html, 404.html, and 500.html with Live Server to preview them in your browser.
 
-- Asegúrate de tener correctamente instalados todos los programas necesarios antes de proceder con la ejecución del proyecto.
-- Si no deseas usar SourceTree, puedes clonar el repositorio directamente usando la terminal con el comando git clone.
+### Notes
 
-## Sin contribuciones ni licencias
+-Make sure all required software is properly installed before running the project.
+-If you prefer not to use SourceTree, you can clone the repository directly using the terminal with the git clone command.
 
-Este proyecto no cuenta con contribuciones externas ni licencia en este momento.
+## No Contributions or Licenses
+
+This project currently has no external contributions or licensing.
+
+## Project Preview
+
+### Index View
+![Index View](etc/preview_images/index.png)
+### Index Mobile View
+![Index Mobile View](etc/preview_images/index_mobile.png)
+### Projects View
+![Projects View](etc/preview_images/projects.png)
+### Projects Mobile View
+![Projects Mobile View](etc/preview_images/projects_mobile.png)
+### 404 View
+![404 View](etc/preview_images/404.png)
+### 404 Mobile View
+![404 Mobile View](etc/preview_images/404_mobile.png)
