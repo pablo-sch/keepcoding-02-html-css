@@ -28,6 +28,10 @@
     background-color: var(--bg-color-3);
 }
 
+.msg-error p {
+    font-family: Calibri, sans-serif;
+}
+
 /*-------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
     .error-container {
