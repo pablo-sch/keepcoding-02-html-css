@@ -9,11 +9,13 @@ Consulta la lista completa de repositorios y descripciones en [repos-kc-web-18.m
 - 🇩🇪 [Alemán](README.de.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Objetivo del Proyecto
 
 El objetivo principal de este proyecto es desarrollar un **portfolio** personal (o de un personaje de ficción), aplicando los conocimientos adquiridos en clase. La idea es crear una presentación interactiva y visualmente atractiva que muestre las habilidades y proyectos de nuestro personaje elegido, utilizando las tecnologías y prácticas aprendidas durante el curso.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Conocimientos Aprendidos y Trabajados
 
 - Implementación de **HTML** estructurado y su interacción con el **DOM**, acompañado de estilos en cascada mediante **CSS**.
@@ -29,6 +31,7 @@ El objetivo principal de este proyecto es desarrollar un **portfolio** personal 
 - Garantía de la **cohesión y limpieza del código**, con una estructura organizada que facilita el mantenimiento y la escalabilidad del proyecto.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Detalles del Proyecto
 
 - Se debe de crear un **header**, en el que los enlaces deben tener el estado `hover` suavizado con una transición. Estos links no son necesarios en la versión móvil.
@@ -57,6 +60,7 @@ El objetivo principal de este proyecto es desarrollar un **portfolio** personal 
 - Página 500. Libre diseño.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Tecnologías Utilizadas
 
 ### Lenguajes
@@ -69,21 +73,24 @@ El objetivo principal de este proyecto es desarrollar un **portfolio** personal 
 Ninguna
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Instrucciones de Instalación y Uso
 
 ### Requisitos de Software
 
 - **[Git](https://git-scm.com/downloads)** (testeado en la versión **2.47.1.windows.1**)
 - **[Visual Studio Code](https://code.visualstudio.com/)** (testeado en la versión **1.99.0**)
-- **Live Server** (VS Code addon, *opcional*)
+- **Live Server** (VS Code addon, _opcional_)
 
 ### Clonación del Repositorio
 
-Proyecto
+- **Proyecto**
 
 ```bash
    git clone https://github.com/pablo-sch/keepcoding-02-html-css.git
 ```
+
+- **Demo**
 
 ![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
@@ -92,6 +99,7 @@ Proyecto
 Una vez clonado el repositorio abra los archivos `index.html`, `project.html`, `404.html` y `500.html` con **Live Server** para previsualizarlos en el navegador.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Vista Previa del Proyecto
 
 ### Index View
@@ -119,6 +127,7 @@ Una vez clonado el repositorio abra los archivos `index.html`, `project.html`, `
 ![404 Mobile View](../etc/preview_images/404_mobile.png)
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Contribuciones y Licencias
 
 Este proyecto no cuenta con contribuciones externas ni licencias.

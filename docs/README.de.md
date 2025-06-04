@@ -9,11 +9,13 @@ Die vollständige Liste der Repositories und Beschreibungen findest du in [repos
 - 🇪🇸 [Spanisch](README.es.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Projektziel
 
 Das Hauptziel dieses Projekts ist die Entwicklung eines **persönlichen Portfolios** (oder eines Portfolios einer fiktiven Figur), wobei das im Unterricht erlernte Wissen angewendet wird. Ziel ist es, eine interaktive und optisch ansprechende Präsentation zu erstellen, die die Fähigkeiten und Projekte unserer gewählten Figur zeigt, unter Verwendung der im Kurs behandelten Technologien und Best Practices.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Erlerntes und Angewandtes Wissen
 
 - Umsetzung von strukturiertem **HTML** und dessen Interaktion mit dem **DOM**, ergänzt durch **CSS**-Stilregeln.
@@ -29,6 +31,7 @@ Das Hauptziel dieses Projekts ist die Entwicklung eines **persönlichen Portfoli
 - Gewährleistung von **sauberem und kohärentem Code**, mit einer organisierten Struktur zur Vereinfachung von Wartung und Erweiterung.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Projektdetails
 
 - Ein **Header** muss erstellt werden, in dem die Links einen sanften `hover`-Übergang aufweisen. Diese Links sind in der mobilen Version nicht erforderlich.
@@ -37,9 +40,9 @@ Das Hauptziel dieses Projekts ist die Entwicklung eines **persönlichen Portfoli
 - Ein Kontaktformular mit **Eingabefeldern**. Alle Felder sollen korrekte Typen und HTML-Validierung enthalten:
   - **Vorname**, **Nachname**, **Telefonnummer** (Pflichtfelder).
   - **Radio Button**, um die Frage zu beantworten: „Wie hast du mich kennengelernt?“ (Pflichtfeld):
-    - Universität  
-    - Keepcoding Kick-off  
-    - Schule  
+    - Universität
+    - Keepcoding Kick-off
+    - Schule
     - Auf GitHub
   - **GitHub-Tag** (Regulärer Ausdruck `^@[^\s]+` für die Validierung — `@username`).
   - **Textarea** für zusätzliche Informationen (max. 180 Zeichen) (Pflichtfeld).
@@ -57,6 +60,7 @@ Das Hauptziel dieses Projekts ist die Entwicklung eines **persönlichen Portfoli
 - Eigene 500-Seite.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Verwendete Technologien
 
 ### Sprachen
@@ -69,21 +73,24 @@ Das Hauptziel dieses Projekts ist die Entwicklung eines **persönlichen Portfoli
 Keine
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Installations- und Nutzungshinweise
 
 ### Software-Voraussetzungen
 
 - **[Git](https://git-scm.com/downloads)** (getestet mit Version **2.47.1.windows.1**)
 - **[Visual Studio Code](https://code.visualstudio.com/)** (getestet mit Version **1.99.0**)
-- **Live Server** (VS Code addon, *optional*)
+- **Live Server** (VS Code addon, _optional_)
 
 ### Repository klonen
 
-Projekt
+- **Projekt**
 
 ```bash
    git clone https://github.com/pablo-sch/keepcoding-02-html-css.git
 ```
+
+- **Demo**
 
 ![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
@@ -92,6 +99,7 @@ Projekt
 Nach dem Klonen des Repositories öffne die Dateien `index.html`, `project.html`, `404.html` und `500.html` mit **Live Server**, um sie im Browser anzuzeigen.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Projektvorschau
 
 ### Index-Ansicht
@@ -119,6 +127,7 @@ Nach dem Klonen des Repositories öffne die Dateien `index.html`, `project.html`
 ![404 Mobile View](../etc/preview_images/404_mobile.png)
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Beiträge und Lizenzen
 
 Dieses Projekt enthält keine externen Beiträge und steht unter keiner Lizenz.

@@ -9,11 +9,13 @@ Check the full list of repositories and descriptions in [repos-kc-web-18.md](htt
 - 🇩🇪 [German](README.de.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Project Objective
 
 The main goal of this project is to develop a **personal portfolio** (or one based on a fictional character), applying the knowledge acquired in class. The idea is to create an interactive and visually appealing presentation that showcases the skills and projects of the chosen character, using the technologies and practices learned during the course.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Learned and Applied Knowledge
 
 - Implementation of structured **HTML** and its interaction with the **DOM**, accompanied by cascading styles through **CSS**.
@@ -29,6 +31,7 @@ The main goal of this project is to develop a **personal portfolio** (or one bas
 - Ensuring **code cleanliness and cohesion**, with an organized structure that facilitates maintenance and scalability.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Project Details
 
 - A **header** must be created where the links include a smooth `hover` state transition. These links are not required in the mobile version.
@@ -37,9 +40,9 @@ The main goal of this project is to develop a **personal portfolio** (or one bas
 - A contact form using **input fields**. All fields should have correct types and HTML validations:
   - **First Name**, **Last Name**, **Phone Number** (required fields).
   - **Radio input** to answer "How did you hear about me?" (required field):
-    - University  
-    - Keepcoding kick-off  
-    - School  
+    - University
+    - Keepcoding kick-off
+    - School
     - On GitHub
   - **GitHub tag** (Use regular expression `^@[^\s]+` for validation — `@username`).
   - **Textarea** for additional user information (maximum 180 characters) (required field).
@@ -57,6 +60,7 @@ The main goal of this project is to develop a **personal portfolio** (or one bas
 - Custom 500 page.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Technologies Used
 
 ### Languages
@@ -69,21 +73,24 @@ The main goal of this project is to develop a **personal portfolio** (or one bas
 None
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Installation and Usage Instructions
 
 ### Software Requirements
 
 - **[Git](https://git-scm.com/downloads)** (tested with version **2.47.1.windows.1**)
 - **[Visual Studio Code](https://code.visualstudio.com/)** (tested with version **1.99.0**)
-- **Live Server** (VS Code addon, *opcional*)
+- **Live Server** (VS Code addon, _opcional_)
 
 ### Cloning the Repository
 
-Project
+- **Project**
 
 ```bash
    git clone https://github.com/pablo-sch/keepcoding-02-html-css.git
 ```
+
+- **Demo**
 
 ![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
@@ -92,6 +99,7 @@ Project
 Once the repository is cloned, open the files `index.html`, `project.html`, `404.html`, and `500.html` with **Live Server** to preview them in the browser.
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Project Preview
 
 ### Index View
@@ -119,6 +127,7 @@ Once the repository is cloned, open the files `index.html`, `project.html`, `404
 ![404 Mobile View](../etc/preview_images/404_mobile.png)
 
 <!-- ------------------------------------------------------------------------------------------- -->
+
 ## Contributions and Licenses
 
 This project contains no external contributions or licenses.
