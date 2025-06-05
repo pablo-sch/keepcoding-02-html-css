@@ -1,7 +1,7 @@
 # CSS and HTML Project Submission
 
 **KeepCoding Projects - Web 18**  
-Check the full list of repositories and descriptions in [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
+Check the full list of repositories and descriptions in 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
 
 ## Select Your Language
 
@@ -84,13 +84,13 @@ None
 
 ### Cloning the Repository
 
-- **Project**
+Project
 
 ```bash
    git clone https://github.com/pablo-sch/keepcoding-02-html-css.git
 ```
 
-- **Demo**
+Demo
 
 ![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
