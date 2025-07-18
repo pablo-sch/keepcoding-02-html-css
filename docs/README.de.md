@@ -59,8 +59,6 @@ Das Hauptziel dieses Projekts ist die Entwicklung eines **persönlichen Portfoli
 
 ## Verwendete Technologien
 
-### Sprachen
-
 - **Sprachen:** HTML und CSS.
 - **Bemerkenswerte Abhängigkeiten (Node.js):** Keine.
 

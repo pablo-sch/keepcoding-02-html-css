@@ -59,8 +59,6 @@ The main goal of this project is to develop a **personal portfolio** (or one bas
 
 ## Technologies Used
 
-### Languages
-
 - **Languages:** HTML and CSS.
 - **Notable Dependencies (Node.js):** None.
 

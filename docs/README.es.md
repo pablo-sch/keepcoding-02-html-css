@@ -59,8 +59,6 @@ El objetivo principal de este proyecto es desarrollar un **portfolio** personal 
 
 ## Tecnologías Utilizadas
 
-### Lenguajes
-
 - **Lenguajes:** HTML y CSS.
 - **Dependencias a destacar (Node.js):** Ninguna.
 
