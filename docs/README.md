@@ -65,69 +65,37 @@ The main goal of this project is to develop a **personal portfolio** (or one bas
 
 ### Languages
 
-- **HTML**: For content structuring and building the webpage structure.
-- **CSS**: For the design and visual styling of the page, ensuring an attractive and coherent user experience.
-
-### Dependencies
-
-None
+- **Languages:** HTML and CSS.
+- **Notable Dependencies (Node.js):** None.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Installation and Usage Instructions
 
-### Software Requirements
+### 1. Software Requirements
 
-- **[Git](https://git-scm.com/downloads)** (tested with version **2.47.1.windows.1**)
-- **[Visual Studio Code](https://code.visualstudio.com/)** (tested with version **1.99.0**)
-- **Live Server** (VS Code addon, _opcional_)
+- **[Git](https://git-scm.com/downloads)** (tested on version **2.47.1.windows.1**)
+- **[Visual Studio Code](https://code.visualstudio.com/)** (tested on version **1.99.0**)
+- **Live Server** (VS Code addon, _optional_)
 
-### Cloning the Repository
-
-Project
+### 2. Repository Cloning
 
 ```bash
    git clone https://github.com/pablo-sch/keepcoding-02-html-css.git
 ```
 
-Demo
+`>` **See Cloning Demo in VSCode:** 🎥 [Gif Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
-![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
-
-### Notes
-
-Once the repository is cloned, open the files `index.html`, `project.html`, `404.html`, and `500.html` with **Live Server** to preview them in the browser.
+**Note:** Once the repository is cloned, open the `index.html`, `project.html`, `404.html`, and `500.html` files using **Live Server** to preview them in your browser.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Project Preview
+## Project Resources
 
-### Index View
-
-![Index View](../etc/preview_images/index.png)
-
-### Index Mobile View
-
-![Index Mobile View](../etc/preview_images/index_mobile.png)
-
-### Projects View
-
-![Projects View](../etc/preview_images/projects.png)
-
-### Projects Mobile View
-
-![Projects Mobile View](../etc/preview_images/projects_mobile.png)
-
-### 404 View
-
-![404 View](../etc/preview_images/404.png)
-
-### 404 Mobile View
-
-![404 Mobile View](../etc/preview_images/404_mobile.png)
+`>` **Project Preview:** 👀 [Preview](preview.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Contributions and Licenses
+## Contributions and Licensing
 
-This project contains no external contributions or licenses.
+Project licensed under the MIT License. Free to use and distribute with attribution. External contributions are not accepted, but suggestions are welcome.

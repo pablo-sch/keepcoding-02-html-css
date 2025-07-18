@@ -1,12 +1,8 @@
 # Entrega Proyecto de CSS y HTML
 
-**Proyectos KeepCoding - Web 18**  
-Consulta la lista completa de repositorios y descripciones en 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
+`>` **Proyectos KeepCoding - Web 18:** 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
 
-## Selecciona tu Idioma
-
-- 🇺🇸 [Inglés](README.md)
-- 🇩🇪 [Alemán](README.de.md)
+`>` **Selecciona tu Idioma:** [Inglés](README.md) 🔄 [Alemán](README.de.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
@@ -65,69 +61,37 @@ El objetivo principal de este proyecto es desarrollar un **portfolio** personal 
 
 ### Lenguajes
 
-- **HTML**: Para la estructuración del contenido y la creación de la estructura de la página web.
-- **CSS**: Para el diseño y estilo visual de la página, asegurando una experiencia de usuario atractiva y coherente.
-
-### Dependencias
-
-Ninguna
+- **Lenguajes:** HTML y CSS.
+- **Dependencias a destacar (Node.js):** Ninguna.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Instrucciones de Instalación y Uso
 
-### Requisitos de Software
+### 1. Requisitos de Software
 
 - **[Git](https://git-scm.com/downloads)** (testeado en la versión **2.47.1.windows.1**)
 - **[Visual Studio Code](https://code.visualstudio.com/)** (testeado en la versión **1.99.0**)
 - **Live Server** (VS Code addon, _opcional_)
 
-### Clonación del Repositorio
-
-Proyecto
+### 2. Clonación del Repositorio
 
 ```bash
    git clone https://github.com/pablo-sch/keepcoding-02-html-css.git
 ```
 
-Demo
+`>` **Ver Demo de Clonanción en VSCode:** 🎥 [Gif Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
-![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
-
-### Notas
-
-Una vez clonado el repositorio abra los archivos `index.html`, `project.html`, `404.html` y `500.html` con **Live Server** para previsualizarlos en el navegador.
+**Nota:** Una vez clonado el repositorio abra los archivos `index.html`, `project.html`, `404.html` y `500.html` con **Live Server** para previsualizarlos en el navegador.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Vista Previa del Proyecto
+## Recursos del Proyecto
 
-### Index View
-
-![Index View](../etc/preview_images/index.png)
-
-### Index Mobile View
-
-![Index Mobile View](../etc/preview_images/index_mobile.png)
-
-### Projects View
-
-![Projects View](../etc/preview_images/projects.png)
-
-### Projects Mobile View
-
-![Projects Mobile View](../etc/preview_images/projects_mobile.png)
-
-### 404 View
-
-![404 View](../etc/preview_images/404.png)
-
-### 404 Mobile View
-
-![404 Mobile View](../etc/preview_images/404_mobile.png)
+`>` **Vista Previa del Proyecto:** 👀 [Vista Previa](preview.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Contribuciones y Licencias
 
-Este proyecto no cuenta con contribuciones externas ni licencias.
+Proyecto bajo licencia MIT. Uso y distribución libres con atribución. No se aceptan contribuciones externas, pero las sugerencias son bienvenidas.

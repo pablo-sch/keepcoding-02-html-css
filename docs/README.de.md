@@ -65,69 +65,37 @@ Das Hauptziel dieses Projekts ist die Entwicklung eines **persönlichen Portfoli
 
 ### Sprachen
 
-- **HTML**: Für die Strukturierung des Inhalts und Aufbau der Webseite.
-- **CSS**: Für das Design und visuelle Erscheinungsbild, um ein attraktives und einheitliches Benutzererlebnis zu gewährleisten.
-
-### Abhängigkeiten
-
-Keine
+- **Sprachen:** HTML und CSS.
+- **Bemerkenswerte Abhängigkeiten (Node.js):** Keine.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Installations- und Nutzungshinweise
 
-### Software-Voraussetzungen
+### 1. Softwareanforderungen
 
 - **[Git](https://git-scm.com/downloads)** (getestet mit Version **2.47.1.windows.1**)
 - **[Visual Studio Code](https://code.visualstudio.com/)** (getestet mit Version **1.99.0**)
-- **Live Server** (VS Code addon, _optional_)
+- **Live Server** (VS Code-Addon, _optional_)
 
-### Repository klonen
-
-Projekt
+### 2. Repository-Klonen
 
 ```bash
    git clone https://github.com/pablo-sch/keepcoding-02-html-css.git
 ```
 
-Demo
+`>` **Klon-Demo in VSCode ansehen:** 🎥 [Gif Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
-![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
-
-### Hinweise
-
-Nach dem Klonen des Repositories öffne die Dateien `index.html`, `project.html`, `404.html` und `500.html` mit **Live Server**, um sie im Browser anzuzeigen.
+**Hinweis:** Nach dem Klonen des Repositories öffne die Dateien `index.html`, `project.html`, `404.html` und `500.html` mit **Live Server**, um sie im Browser anzuzeigen.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Projektvorschau
+## Projektressourcen
 
-### Index-Ansicht
-
-![Index View](../etc/preview_images/index.png)
-
-### Mobile Index-Ansicht
-
-![Index Mobile View](../etc/preview_images/index_mobile.png)
-
-### Projektansicht
-
-![Projects View](../etc/preview_images/projects.png)
-
-### Mobile Projektansicht
-
-![Projects Mobile View](../etc/preview_images/projects_mobile.png)
-
-### 404-Ansicht
-
-![404 View](../etc/preview_images/404.png)
-
-### Mobile 404-Ansicht
-
-![404 Mobile View](../etc/preview_images/404_mobile.png)
+`>` **Projektvorschau:** 👀 [Vorschau](preview.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Beiträge und Lizenzen
+## Beiträge und Lizenzierung
 
-Dieses Projekt enthält keine externen Beiträge und steht unter keiner Lizenz.
+Projekt unter MIT-Lizenz. Frei zur Nutzung und Verbreitung mit Namensnennung. Externe Beiträge werden nicht angenommen, aber Vorschläge sind willkommen.
